@@ -49,8 +49,7 @@ pip install -r requirements.txt
 python scripts/generate_data.py
 
 # 3. Run the notebooks
-# Open notebooks/01_data_analysis.ipynb for EDA
-# Open notebooks/02_model_training.ipynb for training
+# Open notebooks/skill_assessment_model.ipynb for training
 ```
 
 ## Dataset
