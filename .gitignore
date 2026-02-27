@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+env/
+.env/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Model artifacts (large files)
+# src/models/*.pkl       # Keeping .pkl in repo for deployment (only ~7KB)
+# src/models/*.joblib
+
+# Data (keep raw, ignore large processed files)
+# data/processed/*.csv   # Uncomment if processed data is too large for git
