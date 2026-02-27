@@ -18,8 +18,7 @@ tamkeen-skill-assessment/
 |-- src/
 |   |-- models/                  # Trained model artifacts (.pkl)
 |-- notebooks/
-|   |-- 01_data_analysis.ipynb   # EDA & exploration
-|   |-- 02_model_training.ipynb  # Training & evaluation
+|   |-- skill_assessment_model.ipynb   # Training & evaluation
 |-- docs/                        # Documentation
 |-- README.md
 |-- requirements.txt
