@@ -1,4 +1,4 @@
-name: CD — Skill Assessment Deploy
+name: Docker Build & Push — Skill Assessment
 
 on:
   push:
