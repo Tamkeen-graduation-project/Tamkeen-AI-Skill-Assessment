@@ -1,0 +1,310 @@
+{
+  "course_slug": "embedded",
+  "course_title": "Embedded Systems C",
+  "assessment_id": null,
+  "generated_at": "2026-05-12T12:13:10.652407+00:00",
+  "model_used": "gemini-2.5-flash",
+  "total_questions": 20,
+  "questions": [
+    {
+      "assessment_id": null,
+      "question_text": "What is the CPU considered to be in any machine?",
+      "simplified_text": "What is CPU called in a machine?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "The Memory",
+        "The Brain",
+        "The Periphery",
+        "The Bus"
+      ],
+      "difficulty_level": 1,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "What is the characteristic of volatile memory?",
+      "simplified_text": "What happens to volatile memory data?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "Data remains after power loss.",
+        "Data is lost after power loss.",
+        "Data can only be read.",
+        "Data can only be written once."
+      ],
+      "difficulty_level": 1,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "What is the primary role of a device driver in an embedded system?",
+      "simplified_text": "What does a device driver do?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "Executes application logic directly.",
+        "Translates between application and hardware.",
+        "Manages memory allocation.",
+        "Controls the clock system."
+      ],
+      "difficulty_level": 1,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "Which type of clock system provides the highest accuracy?",
+      "simplified_text": "Which clock is most accurate?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "RC",
+        "Ceramic",
+        "Crystal",
+        "External"
+      ],
+      "difficulty_level": 1,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "How does the `volatile` keyword primarily address the \"data inconsistency\" problem when accessing memory-mapped registers?",
+      "simplified_text": "How does `volatile` fix data problems?",
+      "question_type": "multiple_choice",
+      "correct_answer": "A",
+      "options": [
+        "It prevents the compiler from optimizing away reads/writes to the register.",
+        "It stores the register value in a separate buffer.",
+        "It automatically refreshes the register's content.",
+        "It ensures the register is always read from ROM."
+      ],
+      "difficulty_level": 2,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "What is the main benefit of using a configuration file in device driver design?",
+      "simplified_text": "What is the main use of a config file?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "To store application-specific logic.",
+        "To modify module behavior without changing its core implementation.",
+        "To define hardware circuit diagrams.",
+        "To manage memory addresses for peripherals."
+      ],
+      "difficulty_level": 2,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "In software design, what does \"modularity\" refer to?",
+      "simplified_text": "What does modularity mean in software?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "Combining all hardware drivers into a single file.",
+        "Grouping related information and functionality for a specific hardware component.",
+        "Using a single programming language for all modules.",
+        "Ensuring all modules have the same memory footprint."
+      ],
+      "difficulty_level": 2,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "What is the primary function of the Fetch step in the CPU's lifecycle?",
+      "simplified_text": "What is the first step of CPU's work?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "To execute an operation on operands.",
+        "To understand the instruction format.",
+        "To retrieve the next instruction from memory.",
+        "To store the result in the accumulator."
+      ],
+      "difficulty_level": 2,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "A developer needs to store temporary data that must be quickly accessible but can be lost if power fails. Which memory type would be most suitable?",
+      "simplified_text": "Need fast, temporary data storage. Which memory?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "Mask ROM",
+        "SRAM",
+        "Flash Memory",
+        "OTP ROM"
+      ],
+      "difficulty_level": 3,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "An embedded system requires concurrent instruction fetching and execution to achieve high performance. Which bus architecture best supports this?",
+      "simplified_text": "Need fast CPU with concurrent tasks. Which bus?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "Von Neumann",
+        "Harvard",
+        "Shared Bus",
+        "Serial Bus"
+      ],
+      "difficulty_level": 3,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "To allow an application to control a microphone's \"turn on\" and \"turn off\" functions, which specific file within its software driver would define these functions for external use?",
+      "simplified_text": "Where do app-usable functions like \"turn on\" go?",
+      "question_type": "multiple_choice",
+      "correct_answer": "D",
+      "options": [
+        "Private File",
+        "Configuration File",
+        "Program File",
+        "Interface File"
+      ],
+      "difficulty_level": 3,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "If an embedded system needs to change its operating mode (e.g., from a counter to a timer) at runtime without requiring a full recompilation, which configuration technique is most appropriate?",
+      "simplified_text": "Change mode at runtime, no recompile. Which config method?",
+      "question_type": "multiple_choice",
+      "correct_answer": "D",
+      "options": [
+        "Pre-build/Compile time",
+        "Link time",
+        "Post-build (Selectable)",
+        "Post-build (Writable)"
+      ],
+      "difficulty_level": 3,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "Which statement accurately compares SRAM and DRAM based on cost and performance?",
+      "simplified_text": "Compare SRAM and DRAM: cost and speed.",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "SRAM is smaller and cheaper, while DRAM is faster.",
+        "DRAM is smaller and faster, while SRAM is cheaper.",
+        "SRAM is smaller and faster, while DRAM is cheaper.",
+        "DRAM is smaller and cheaper, while SRAM is slower."
+      ],
+      "difficulty_level": 4,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "Analyze the trade-offs between RC and Crystal clock systems regarding size and accuracy.",
+      "simplified_text": "RC vs. Crystal clocks: size and accuracy?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "RC is smaller and more accurate, while Crystal is larger and less accurate.",
+        "Crystal is smaller and more accurate, while RC is larger and less accurate.",
+        "RC is smaller but less accurate, while Crystal is larger but more accurate.",
+        "Crystal is smaller but less accurate, while RC is larger but more accurate."
+      ],
+      "difficulty_level": 4,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "A C program directly writes to a memory-mapped peripheral register. If the hardware circuit of that peripheral can independently change the value of the register, what type of problem can arise without proper handling?",
+      "simplified_text": "Hardware changes register, C program reads. What problem?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "Memory overflow.",
+        "Data inconsistency.",
+        "Stack corruption.",
+        "Infinite loop."
+      ],
+      "difficulty_level": 4,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "Contrast Compiler Switches with Link Time configuration techniques regarding memory footprint and flexibility to change behavior after compilation.",
+      "simplified_text": "Compiler vs. Link Time: memory and change flexibility?",
+      "question_type": "multiple_choice",
+      "correct_answer": "A",
+      "options": [
+        "Compiler Switches have a smaller memory footprint but less runtime flexibility, while Link Time uses more memory but allows runtime changes.",
+        "Link Time has a smaller memory footprint but less runtime flexibility, while Compiler Switches use more memory but allow runtime changes.",
+        "Both have the same memory footprint and flexibility.",
+        "Neither allows changes after compilation."
+      ],
+      "difficulty_level": 4,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "You are tasked with designing a software driver for a new temperature sensor. Which software design characteristic is paramount to ensure that the driver can be easily adapted and reused if the underlying hardware changes (e.g., a different temperature sensor model is used)?",
+      "simplified_text": "Designing sensor driver. What helps reuse if hardware changes?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "High Coupling",
+        "Low Cohesion",
+        "Modularity and Portability",
+        "Direct Memory Access"
+      ],
+      "difficulty_level": 5,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "When designing a memory-mapped register access mechanism in C for a complex peripheral with many related registers, which mapping method (Direct, Pointer, or Structure) offers the best balance of readability and type safety, especially for grouping registers logically?",
+      "simplified_text": "For many related registers, which C mapping is best for clarity and safety?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "Direct Address Mapping",
+        "Pointer Mapping",
+        "Structure Mapping",
+        "Bit Masking"
+      ],
+      "difficulty_level": 5,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "A critical embedded system operates in an environment with significant temperature fluctuations and potential electromagnetic interference. Which clock system type would be the most suitable choice to ensure stable and accurate timing under these conditions?",
+      "simplified_text": "Stable clock needed for changing temperature, electrical interference. Which one?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "RC Oscillator",
+        "Ceramic Resonator",
+        "Crystal Oscillator",
+        "Internal RC"
+      ],
+      "difficulty_level": 5,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "An embedded system needs to allow its operating mode to be changed by an end-user via a debugger or flasher tool *after* the software has been deployed to the device. Which configuration parameter technique is the most appropriate for this requirement?",
+      "simplified_text": "User changes device mode with debugger after deployment. Which config method?",
+      "question_type": "multiple_choice",
+      "correct_answer": "D",
+      "options": [
+        "Pre-build/Compile time",
+        "Link time",
+        "Post-build (Selectable)",
+        "Post-build (Writable)"
+      ],
+      "difficulty_level": 5,
+      "isDeleted": false
+    }
+  ]
+}

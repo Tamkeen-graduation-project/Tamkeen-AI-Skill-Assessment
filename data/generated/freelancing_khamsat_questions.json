@@ -1,0 +1,310 @@
+{
+  "course_slug": "freelancing_khamsat",
+  "course_title": "Freelancing with Khamsat",
+  "assessment_id": null,
+  "generated_at": "2026-05-12T12:13:10.656271+00:00",
+  "model_used": "gemini-2.5-flash",
+  "total_questions": 20,
+  "questions": [
+    {
+      "assessment_id": null,
+      "question_text": "What are the three main types of freelance platforms discussed in the course?",
+      "simplified_text": "What are the 3 main kinds of freelance websites?",
+      "question_type": "multiple_choice",
+      "correct_answer": "A",
+      "options": [
+        "Project-based, Service/Gigs, and Marketplace",
+        "Auction-based, Fixed-price, and Hourly",
+        "Direct Client, Agency, and Hybrid",
+        "Local, International, and Niche"
+      ],
+      "difficulty_level": 1,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "What is the minimum amount of money a freelancer must have in their Khamsat balance to initiate a withdrawal to PayPal?",
+      "simplified_text": "What is the smallest amount you can take out from Khamsat?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "$5",
+        "$10",
+        "$20",
+        "$50"
+      ],
+      "difficulty_level": 1,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "For how many days do earnings remain in a 'pending' state on Khamsat before they become available for withdrawal?",
+      "simplified_text": "How many days until Khamsat money is ready to take out?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "7 days",
+        "10 days",
+        "14 days",
+        "30 days"
+      ],
+      "difficulty_level": 1,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "Which payment method is exclusively used for withdrawing earnings from Khamsat?",
+      "simplified_text": "What is the only way to get money out of Khamsat?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "Bank Transfer",
+        "PayPal",
+        "Credit Card",
+        "Western Union"
+      ],
+      "difficulty_level": 1,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "How does a 'Service/Gigs' platform like Khamsat fundamentally differ from a 'Project-based' platform like Guru or Mostaql?",
+      "simplified_text": "How is Khamsat different from project-based freelance sites?",
+      "question_type": "multiple_choice",
+      "correct_answer": "A",
+      "options": [
+        "On Service/Gigs platforms, freelancers create and offer services for clients to buy, while on Project-based platforms, clients post jobs for freelancers to apply.",
+        "On Service/Gigs platforms, clients set the price, while on Project-based platforms, freelancers set the price.",
+        "Service/Gigs platforms focus on long-term contracts, whereas Project-based platforms focus on one-time tasks.",
+        "Service/Gigs platforms only allow digital products, while Project-based platforms allow both physical and digital."
+      ],
+      "difficulty_level": 2,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "Why is it recommended not to deliver a service on Khamsat within the first 24 hours of a client's purchase?",
+      "simplified_text": "Why wait 24 hours before delivering a Khamsat service?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "To allow time for the client to provide detailed instructions.",
+        "To ensure the freelancer has enough time to complete the work thoroughly.",
+        "To protect against potential issues with clients using stolen or problematic PayPal accounts.",
+        "To allow Khamsat's moderation team to review the service details."
+      ],
+      "difficulty_level": 2,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "What is the primary reason for a freelancer to verify their identity on Khamsat by uploading an ID and taking a selfie?",
+      "simplified_text": "Why verify your ID on Khamsat?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "To unlock higher service ranks immediately.",
+        "To allow clients to feel confident they are dealing with a real person.",
+        "To enable faster payment processing from Khamsat.",
+        "To gain access to premium features not available to unverified users."
+      ],
+      "difficulty_level": 2,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "What action does Khamsat take if a client does not respond (neither accepts nor requests modifications) to a freelancer's 'receipt request' within the specified timeframe?",
+      "simplified_text": "What happens if a client doesn't reply to a delivery request?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "The service is automatically canceled, and the client is refunded.",
+        "Khamsat automatically accepts the service on behalf of the client, and earnings are released.",
+        "The freelancer must resubmit the service delivery request manually.",
+        "The client is given an extended period of 7 days to respond."
+      ],
+      "difficulty_level": 2,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "A freelancer wants to offer a service for 'writing an article' on Khamsat. To prevent their service from being rejected, what crucial detail must they include in the service description or title?",
+      "simplified_text": "Selling an article service? What detail must you add to avoid rejection?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "The freelancer's previous client testimonials.",
+        "The specific category and sub-category of the service.",
+        "The exact number of words for the article.",
+        "A link to their external portfolio."
+      ],
+      "difficulty_level": 3,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "A client has purchased a service on Khamsat. Before the freelancer can safely deliver the completed work and ensure they receive their earnings, what status must the service order display?",
+      "simplified_text": "What status must a Khamsat order show before you deliver work?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "\"Pending Review\"",
+        "\"Pending Instructions\"",
+        "\"In Progress\"",
+        "\"Delivered\""
+      ],
+      "difficulty_level": 3,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "A freelancer has linked an EasyPay Visa card to their PayPal account. To avoid the $5 fee when transferring funds from PayPal to this card, when should they schedule the transfer?",
+      "simplified_text": "When can you transfer PayPal money to EasyPay without a fee?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "Any time during the first week of the month.",
+        "Only when the automatic transfer occurs at the beginning of the month.",
+        "After accumulating more than $100 in their PayPal balance.",
+        "During the last week of the month."
+      ],
+      "difficulty_level": 3,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "To increase visibility for clients who require immediate service and want to communicate with an active freelancer, which filter should a freelancer ensure applies to their Khamsat profile?",
+      "simplified_text": "How can clients find you faster for urgent work?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "Having a \"Distinguished Seller\" rank.",
+        "Being \"Currently Online.\"",
+        "Having a \"Verified Identity.\"",
+        "Offering \"Service Development\" options."
+      ],
+      "difficulty_level": 3,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "Compare the fees and estimated delivery times for transferring funds from PayPal to a linked US bank account versus a linked Visa card.",
+      "simplified_text": "US bank vs. Visa card: PayPal transfer fees and time?",
+      "question_type": "multiple_choice",
+      "correct_answer": "A",
+      "options": [
+        "US bank: 1 day, no fee; Visa card: 7 days, $5 fee.",
+        "US bank: 7 days, $5 fee; Visa card: 1 day, no fee.",
+        "Both: 1 day, no fee.",
+        "Both: 7 days, $5 fee."
+      ],
+      "difficulty_level": 4,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "A freelancer's service was rejected on Khamsat, and they feel the reason provided was unclear or incorrect. What is the most effective way to resolve this issue?",
+      "simplified_text": "Service rejected, reason unclear. What's the best next step?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "Delete the service and create a new one with a different title.",
+        "Immediately modify the service based on a guess and resubmit.",
+        "Reply to the rejection email to ask Khamsat's customer service for clarification.",
+        "Wait for a few days for Khamsat to automatically re-review the service."
+      ],
+      "difficulty_level": 4,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "How does Khamsat's ranking system (e.g., New Seller, Active Seller, Distinguished Seller) motivate freelancers to improve their performance and increase sales?",
+      "simplified_text": "How do Khamsat ranks make freelancers work better?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "Higher ranks unlock access to exclusive client projects.",
+        "Each higher rank provides more service slots and better features, encouraging sales.",
+        "Only \"Trusted Sellers\" receive payments directly without pending periods.",
+        "Lower ranks are penalized with higher commission fees."
+      ],
+      "difficulty_level": 4,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "On Khamsat, a freelancer has sold 50 services, but only to 10 unique clients. How would the \"number of clients\" metric on their profile reflect this activity?",
+      "simplified_text": "Sold 50 services to 10 people. How many clients show on your profile?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "50 clients, as each service counts as a client interaction.",
+        "10 clients, reflecting the number of distinct individuals who made a purchase.",
+        "60 clients, combining both services and unique clients.",
+        "The number of clients would remain unlisted until 100 unique clients are reached."
+      ],
+      "difficulty_level": 4,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "When designing a new service for Khamsat, what is the most effective strategy to ensure it stands out, gets approved, and attracts buyers?",
+      "simplified_text": "Best way to make a new Khamsat service sell well?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "Using a vague title to appeal to a broad audience and offering the lowest price.",
+        "Copying a popular service title and description from another freelancer.",
+        "Creating a unique service idea, providing a clear, specific description, and showcasing a strong portfolio.",
+        "Focusing solely on a niche category with very few potential clients."
+      ],
+      "difficulty_level": 5,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "A freelancer in Egypt wants to link a US bank account to their PayPal. They are considering both Payoneer and Wise (formerly TransferWise). What critical factor should they evaluate when choosing between these two services to avoid linking issues with PayPal?",
+      "simplified_text": "Linking a US bank to PayPal in Egypt: Payoneer vs. Wise. What's key?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "The minimum withdrawal amount from PayPal to the linked service.",
+        "The specific type of US bank account provided by Payoneer, as PayPal only accepts \"Community Federal Savings Bank.\"",
+        "The monthly maintenance fees charged by each service for the US bank account.",
+        "The speed at which each service processes currency conversions from USD to EGP."
+      ],
+      "difficulty_level": 5,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "As an expert educational assessment designer, what is the best practice for a Khamsat freelancer to ensure clear communication and smooth service delivery, minimizing client requests for modifications?",
+      "simplified_text": "How can freelancers deliver services smoothly and avoid changes?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "Deliver the service as quickly as possible without waiting for full client instructions.",
+        "Provide a detailed service description and clear instructions for the buyer on what information is needed at the start.",
+        "Offer unlimited modifications as part of the basic service package.",
+        "Avoid direct communication with the client, relying solely on service descriptions."
+      ],
+      "difficulty_level": 5,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "Among the various strategies to increase service sales on Khamsat, which one offers the most sustainable long-term benefit for a freelancer's reputation and client acquisition?",
+      "simplified_text": "Best long-term strategy for more Khamsat sales?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "Constantly reducing service prices to be the cheapest option.",
+        "Focusing on unique service ideas and maintaining a strong, regularly updated portfolio with work samples.",
+        "Frequently changing service titles and descriptions to appear new in search results.",
+        "Only accepting clients who have a \"Distinguished Buyer\" rank."
+      ],
+      "difficulty_level": 5,
+      "isDeleted": false
+    }
+  ]
+}

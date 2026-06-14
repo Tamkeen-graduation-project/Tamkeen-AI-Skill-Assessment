@@ -1,0 +1,10 @@
+{
+  "_comment": "Map course slugs to their real assessment_id in the production database. Update these values from the backend DB before running the generator.",
+  "digital_marketing": null,
+  "embedded": null,
+  "freelancing_khamsat": null,
+  "iot": null,
+  "python": null,
+  "testing": null,
+  "ux": null
+}

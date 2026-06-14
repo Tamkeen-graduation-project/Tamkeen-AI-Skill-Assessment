@@ -1,0 +1,492 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum DisabilityTypes {
+  Dyslexia
+  ADHD
+}
+
+enum UserRole {
+  user
+  admin
+  instructor
+}
+
+enum EducationLevel {
+  NO_FORMAL
+  PRIMARY
+  LOWER_SECONDARY
+  UPPER_SECONDARY
+  SHORT_CYCLE_TERTIARY
+  BACHELOR
+  MASTER
+  DOCTORATE
+}
+
+enum ContentType {
+  VIDEO
+}
+
+model TempUser {
+  id        String    @id @default(uuid())
+  email     String    @unique
+  name      String
+  password  String
+  createdAt DateTime  @default(now())
+  expiresAt DateTime
+  role      UserRole?
+
+  @@map("temp_users")
+}
+
+model users {
+  user_id         Int              @id @default(autoincrement())
+  email           String           @unique @db.VarChar(255)
+  password_hash   String?          @db.VarChar(255)
+  name            String           @db.VarChar(255)
+  birth_date      DateTime?        @db.Date()
+  disability_type DisabilityTypes?
+  education_level EducationLevel?
+  is2FAEnabled    Boolean          @default(false)
+  googleId        String?          @db.Text
+  two_fa_encrypt  String?          @db.Text
+  two_fa_iv       String?          @db.Text
+  two_fa_tage     String?          @db.Text
+  refreshToken    String?          @db.Text
+  isVerified      Boolean          @default(false)
+  role            UserRole?
+  created_at      DateTime         @default(now()) @db.Timestamp(6)
+  updated_at      DateTime         @updatedAt @db.Timestamp(6)
+  last_login      DateTime?        @db.Timestamp(6)
+
+  sessions          sessions[]
+  instructors       instructors?
+  instructorRatings instructor_rating[]
+  courseRatings     course_rating[]
+  employers        employers?
+  // user_preferences user_preferences?
+
+  enrollments         enrollments[]
+  lesson_completions  lesson_completions[]
+  assessment_attempts assessment_attempts[]
+  certificates        certificates[]
+  user_badges         user_badges[]
+  job_applications    job_applications[]
+  user_interactions   user_interactions[]
+  posts               posts[]
+  comments            comments[]
+  likes               likes[]
+  trackingSessions    tracking_session[]
+
+}
+
+model sessions {
+  session_id String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  user_id    Int
+  valid      Boolean  @default(true)
+  user_agent String?  @db.Text
+  expires_at DateTime @db.Timestamp(6)
+  created_at DateTime @default(now()) @db.Timestamp(6)
+  updated_at DateTime @updatedAt @db.Timestamp(6)
+
+  user users @relation(fields: [user_id], references: [user_id], onDelete: Cascade)
+
+}
+
+model instructors {
+  instructor_id Int      @id @default(autoincrement())
+  user_id       Int      @unique
+  bio           String?  @db.Text
+  expertise     String[]
+  verified      Boolean  @default(false)
+  isDeleted     Boolean  @default(false)
+  rating_avg    Decimal? @db.Decimal(2, 1)
+  rating_count  Int      @default(0)
+  rating_sum    Decimal  @default(0)
+
+  user    users               @relation(fields: [user_id], references: [user_id], onDelete: Cascade)
+  courses courses[]
+  ratings instructor_rating[]
+  @@index([user_id])
+}
+
+model employers {
+  employer_id  Int     @id @default(autoincrement())
+  user_id      Int     @unique
+  company_name String  @db.VarChar(255)
+  industry     String  @db.VarChar(100)
+  website      String? @db.Text
+  verified     Boolean @default(false)
+
+  user         users          @relation(fields: [user_id], references: [user_id], onDelete: Cascade)
+  job_postings job_postings[]
+
+  @@index([user_id])
+}
+
+// model user_preferences {
+//   preference_id         Int     @id @default(autoincrement())
+//   user_id               Int     @unique
+//   font_size             String? @db.VarChar(20)
+//   color_scheme          String? @db.VarChar(50)
+//   tts_enabled           Boolean
+//   sign_language_enabled Boolean
+
+//   user users @relation(fields: [user_id], references: [user_id], onDelete: Cascade)
+// }
+
+model courses {
+  course_id          Int      @id @default(autoincrement())
+  instructor_id      Int?
+  category_id        Int
+  title              String   @db.VarChar(500)
+  description        String?  @db.Text
+  difficulty_level   Int
+  duration_hours     Decimal? @db.Decimal(5, 2)
+  price              Decimal? @db.Decimal(10, 2)
+  is_published       Boolean  @default(false)
+  thumbnail_url      String
+  rating_avg         Decimal? @db.Decimal(2, 1)
+  rating_count       Int      @default(0)
+  rating_sum         Decimal  @default(0)
+  thumbnail_publicId String   @db.Text
+  skills             Json     @default("[]")  @db.Json
+
+  instructor        instructors?         @relation(fields: [instructor_id], references: [instructor_id])
+  category          categories           @relation(fields: [category_id], references: [category_id])
+  lessons           lessons[]
+  completed_lessons lesson_completions[]
+  assessments       assessments[]
+  enrollments       enrollments[]
+  certificates      certificates[]
+  user_interactions user_interactions[]
+  isDeleted         Boolean              @default(false)
+  ratings           course_rating[]
+}
+
+model categories {
+  category_id Int      @id @default(autoincrement())
+  name        String   @unique @db.VarChar(100)
+  slug        String   @unique @db.VarChar(120)
+  created_at  DateTime @default(now())
+
+  courses courses[]
+}
+
+model lessons {
+  lesson_id          Int                  @id @default(autoincrement())
+  course_id          Int
+  title              String               @db.VarChar(500)
+  order_number       Int
+  content_type       ContentType
+  video_url          String?              @db.Text
+  duration_minutes   Int
+  transcript         String?              @db.Text
+  isFreePreview      Boolean              @default(false)
+  isDeleted          Boolean              @default(false)
+  video_publicId     String?
+  course             courses              @relation(fields: [course_id], references: [course_id], onDelete: Cascade)
+  lesson_completions lesson_completions[]
+  trackingSessions   tracking_session[]
+
+  @@unique([course_id, order_number])
+  @@index([course_id])
+}
+
+model enrollments {
+  enrollment_id      Int       @id @default(autoincrement())
+  user_id            Int
+  course_id          Int
+  enrolled_at        DateTime  @default(now()) @db.Timestamp(6)
+  completion_percent Decimal?  @db.Decimal(5, 2)
+  last_accessed      DateTime? @db.Timestamp(6)
+  status             String?   @db.VarChar(20)
+
+  user   users   @relation(fields: [user_id], references: [user_id], onDelete: Cascade)
+  course courses @relation(fields: [course_id], references: [course_id], onDelete: Cascade)
+
+  @@unique([user_id, course_id])
+  @@index([user_id])
+  @@index([course_id])
+}
+
+model lesson_completions {
+  completion_id      Int      @id @default(autoincrement())
+  user_id            Int
+  lesson_id          Int
+  course_id          Int
+  completed_at       DateTime @default(now()) @db.Timestamp(6)
+  time_spent_seconds Int
+  isDeleted          Boolean  @default(false)
+  user               users    @relation(fields: [user_id], references: [user_id], onDelete: Cascade)
+  lesson             lessons  @relation(fields: [lesson_id], references: [lesson_id], onDelete: Cascade)
+  course             courses  @relation(fields: [course_id], references: [course_id])
+
+  @@unique([user_id, course_id])
+}
+
+model instructor_rating {
+  rating_id     Int      @id @default(autoincrement())
+  user_id       Int
+  instructor_id Int
+  rating        Decimal  @db.Decimal(5, 2)
+  created_at    DateTime @default(now()) @db.Timestamp(6)
+  updated_at    DateTime @updatedAt @db.Timestamp(6)
+
+  user       users       @relation(fields: [user_id], references: [user_id], onDelete: Cascade)
+  instructor instructors @relation(fields: [instructor_id], references: [instructor_id], onDelete: Cascade)
+
+  @@unique([user_id, instructor_id])
+}
+
+model course_rating {
+  rating_id  Int      @id @default(autoincrement())
+  user_id    Int
+  course_id  Int
+  rating     Decimal  @db.Decimal(5, 2)
+  created_at DateTime @default(now()) @db.Timestamp(6)
+  updated_at DateTime @updatedAt @db.Timestamp(6)
+
+  user   users   @relation(fields: [user_id], references: [user_id], onDelete: Cascade)
+  course courses @relation(fields: [course_id], references: [course_id], onDelete: Cascade)
+
+  @@unique([user_id, course_id])
+}
+
+model assessments {
+  assessment_id       Int                   @id @default(autoincrement())
+  course_id           Int
+  title               String                @db.VarChar(500)
+  type                String                @db.VarChar(50)
+  passing_score       Decimal?              @db.Decimal(5, 2)
+  time_limit_minutes  Int
+  max_attempts        Int
+  isDeleted           Boolean               @default(false)
+  order_number        Int
+  course              courses               @relation(fields: [course_id], references: [course_id], onDelete: Cascade)
+  questions           questions[]
+  assessment_attempts assessment_attempts[]
+
+  @@index([course_id])
+}
+
+model questions {
+  question_id      Int     @id @default(autoincrement())
+  assessment_id    Int
+  question_text    String  @db.Text
+  question_type    String  @db.VarChar(50)
+  correct_answer   String  @db.Text
+  options          Json
+  difficulty_level Int
+  isDeleted        Boolean @default(false)
+
+  assessment assessments @relation(fields: [assessment_id], references: [assessment_id], onDelete: Cascade)
+
+  @@index([assessment_id])
+}
+
+model assessment_attempts {
+  attempt_id    Int      @id @default(autoincrement())
+  user_id       Int
+  assessment_id Int
+  started_at    DateTime @default(now()) @db.Timestamp(6)
+  score         Decimal? @db.Decimal(5, 2)
+  passed        Boolean
+  answers       Json
+
+  user       users       @relation(fields: [user_id], references: [user_id], onDelete: Cascade)
+  assessment assessments @relation(fields: [assessment_id], references: [assessment_id], onDelete: Cascade)
+
+  @@index([user_id])
+  @@index([assessment_id])
+}
+
+model certificates {
+  certificate_id    Int      @id @default(autoincrement())
+  user_id           Int
+  course_id         Int
+  issued_at         DateTime @default(now()) @db.Timestamp(6)
+  verification_code String   @unique @db.VarChar(100)
+
+  user   users   @relation(fields: [user_id], references: [user_id], onDelete: Cascade)
+  course courses @relation(fields: [course_id], references: [course_id], onDelete: Cascade)
+
+  @@index([user_id])
+  @@index([verification_code])
+}
+
+model badges {
+  badge_id    Int     @id @default(autoincrement())
+  name        String  @db.VarChar(200)
+  description String? @db.Text
+  icon_url    String? @db.Text
+  criteria    Json
+
+  user_badges user_badges[]
+}
+
+model user_badges {
+  user_badge_id Int      @id @default(autoincrement())
+  user_id       Int
+  badge_id      Int
+  earned_at     DateTime @default(now()) @db.Timestamp(6)
+
+  user  users  @relation(fields: [user_id], references: [user_id], onDelete: Cascade)
+  badge badges @relation(fields: [badge_id], references: [badge_id], onDelete: Cascade)
+
+  @@index([user_id])
+  @@index([badge_id])
+}
+
+model job_postings {
+  job_id          Int      @id @default(autoincrement())
+  employer_id     Int
+  title           String   @db.VarChar(255)
+  description     String?  @db.Text
+  location        String?  @db.VarChar(255)
+  salary_range    String?  @db.VarChar(50)
+  required_skills String[]
+  is_active       Boolean  @default(true)
+  created_at      DateTime @default(now()) @db.Timestamp(6)
+  updated_at      DateTime @updatedAt @db.Timestamp(6)
+
+  employer         employers          @relation(fields: [employer_id], references: [employer_id], onDelete: Cascade)
+  job_applications job_applications[]
+
+  @@index([employer_id])
+}
+
+model job_applications {
+  application_id Int      @id @default(autoincrement())
+  job_id         Int
+  user_id        Int
+  applied_at     DateTime @default(now()) @db.Timestamp(6)
+  status         String   @default("pending") @db.VarChar(50)
+  resume_url     String?  @db.Text
+
+  user users        @relation(fields: [user_id], references: [user_id], onDelete: Cascade)
+  job  job_postings @relation(fields: [job_id], references: [job_id], onDelete: Cascade)
+
+  @@unique([user_id, job_id])
+  @@index([user_id])
+  @@index([job_id])
+}
+
+model posts {
+  post_id    Int      @id @default(autoincrement())
+  user_id    Int
+  title      String   @db.VarChar(255)
+  content    String?  @db.Text
+  created_at DateTime @default(now()) @db.Timestamp(6)
+  updated_at DateTime @updatedAt @db.Timestamp(6)
+
+  user     users      @relation(fields: [user_id], references: [user_id], onDelete: Cascade)
+  comments comments[]
+  likes    likes[]
+
+  @@index([user_id])
+}
+
+model comments {
+  comment_id Int      @id @default(autoincrement())
+  post_id    Int
+  user_id    Int
+  content    String   @db.Text
+  created_at DateTime @default(now()) @db.Timestamp(6)
+
+  post posts @relation(fields: [post_id], references: [post_id], onDelete: Cascade)
+  user users @relation(fields: [user_id], references: [user_id], onDelete: Cascade)
+
+  @@index([post_id])
+  @@index([user_id])
+}
+
+model likes {
+  like_id    Int      @id @default(autoincrement())
+  post_id    Int
+  user_id    Int
+  created_at DateTime @default(now()) @db.Timestamp(6)
+
+  post posts @relation(fields: [post_id], references: [post_id], onDelete: Cascade)
+  user users @relation(fields: [user_id], references: [user_id], onDelete: Cascade)
+
+  @@unique([user_id, post_id])
+  @@index([post_id])
+  @@index([user_id])
+}
+
+model user_interactions {
+  interaction_id Int      @id @default(autoincrement())
+  user_id        Int
+  course_id      Int?
+  timestamp      DateTime @default(now()) @db.Timestamp(6)
+  event_type     String   @db.VarChar(100)
+  event_data     Json
+
+  user   users    @relation(fields: [user_id], references: [user_id], onDelete: Cascade)
+  course courses? @relation(fields: [course_id], references: [course_id], onDelete: Cascade)
+
+  @@index([user_id])
+  @@index([course_id])
+}
+
+model tracking_session {
+  id         String    @id @default(uuid())
+  user_id    Int
+  lesson_id  Int
+  started_at DateTime  @default(now())
+  ended_at   DateTime?
+
+  user        users                 @relation(fields: [user_id], references: [user_id], onDelete: Cascade)
+  lesson      lessons               @relation(fields: [lesson_id], references: [lesson_id])
+  intervals   tracking_interval[]
+  finalReport tracking_finalReport?
+}
+
+model tracking_interval {
+  id         String   @id @default(uuid())
+  session_id String
+  start_time DateTime
+  end_time   DateTime
+
+  avg_score               Float
+  focus_percentage        Float
+  distracted_percentage   Float
+  looking_away_percentage Float
+  sleeping_percentage     Float
+
+  dominant_state String
+
+  createdAt DateTime @default(now())
+
+  session tracking_session @relation(fields: [session_id], references: [id])
+
+  @@index([session_id])
+}
+
+model tracking_finalReport {
+  id         String @id @default(uuid())
+  session_id String @unique
+
+  average_score                 Float
+  total_focus_percentage        Float
+  total_distracted_percentage   Float
+  total_looking_away_percentage Float
+  total_sleeping_percentage     Float
+
+  dominant_state String
+
+  session tracking_session @relation(fields: [session_id], references: [id])
+}

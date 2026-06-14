@@ -1,0 +1,106 @@
+question_id,assessment_id,question_text,question_type,correct_answer,options,difficulty_level
+q_assessment_digital_marketing_1_0,assessment_digital_marketing,When does the marketing process traditionally begin?,multiple_choice,B,After the product is manufactured|Even before the product exists|Only when sales decline|After the first customer complaint,1
+q_assessment_digital_marketing_2_1,assessment_digital_marketing,What is the core definition of Digital Marketing according to Tamkeen Content?,multiple_choice,B,Posting on social media every day|The intersection of marketing science and information technology|Buying ads on Google|Designing a website,2
+q_assessment_digital_marketing_3_2,assessment_digital_marketing,Which stage of marketing focuses on turning the audience into customers?,multiple_choice,C,Market Research|Branding|Conversion|Loyalty Group,3
+q_assessment_digital_marketing_4_3,assessment_digital_marketing,Digital Marketing proficiency requirements vary based on what?,multiple_choice,B,The budget of the company|The specific specialization|The age of the marketer|The size of the laptop used,4
+q_assessment_python_1_0,assessment_python,What is the primary characteristic of a Scalar object in Python?,multiple_choice,B,It can be converted to a list|You cannot derive a new object from it|It always has a decimal point|It can only be used in loops,1
+q_assessment_python_2_1,assessment_python,What does the int() function do when given a float like 3.9?,multiple_choice,B,Rounds it to 4|Returns 3 (removes the fraction)|Returns 3.0|Errors,2
+q_assessment_python_3_2,assessment_python,Which of these is a Non-Scalar object in Python?,multiple_choice,C,int|float|list|bool,3
+q_assessment_python_4_3,assessment_python,What is returned by type(None) in Python?,multiple_choice,B,None|class 'NoneType'|Null|0,4
+q_assessment_embedded_1_0,assessment_embedded,What is the primary role of a 'device driver' in an embedded system?,multiple_choice,B,To power the hardware|To act as a translator between application and hardware|To store user data|To increase the CPU speed,1
+q_assessment_embedded_2_1,assessment_embedded,Why can't an application interact with hardware directly?,multiple_choice,B,Hardware is too fast|Someone needs to communicate in the hardware's specific language|Security protocols always prevent it|Applications are only for software,2
+q_assessment_iot_1_0,assessment_iot,Which of the following was the first category of devices connected to the Internet?,multiple_choice,B,Smart watches|Computers|Mobile phones|Cars,1
+q_assessment_iot_2_1,assessment_iot,"In the context of IoT, what is a 'server'?",multiple_choice,B,A person who helps users|A main computer that offers services to other devices|A type of sensor|A wireless router,2
+q_assessment_iot_3_2,assessment_iot,Which category of IoT devices includes water and electricity meters?,multiple_choice,B,Personal devices|Utility meters|Home appliances|Carrier networks,3
+q_assessment_ux_2_0,assessment_ux,What is the main goal of Information Architecture in UX?,multiple_choice,B,Choosing the right colors|Structuring and organizing content logically|Writing code for the frontend|Testing the server speed,2
+q_assessment_digital_marketing_1_gen_0,assessment_digital_marketing,Semantic question about digital marketing (Difficulty 1),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,1
+q_assessment_digital_marketing_1_gen_1,assessment_digital_marketing,Semantic question about digital marketing (Difficulty 1),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,1
+q_assessment_digital_marketing_2_gen_0,assessment_digital_marketing,Semantic question about digital marketing (Difficulty 2),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,2
+q_assessment_digital_marketing_2_gen_1,assessment_digital_marketing,Semantic question about digital marketing (Difficulty 2),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,2
+q_assessment_digital_marketing_3_gen_0,assessment_digital_marketing,Semantic question about digital marketing (Difficulty 3),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,3
+q_assessment_digital_marketing_3_gen_1,assessment_digital_marketing,Semantic question about digital marketing (Difficulty 3),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,3
+q_assessment_digital_marketing_4_gen_0,assessment_digital_marketing,Semantic question about digital marketing (Difficulty 4),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,4
+q_assessment_digital_marketing_4_gen_1,assessment_digital_marketing,Semantic question about digital marketing (Difficulty 4),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,4
+q_assessment_digital_marketing_5_gen_0,assessment_digital_marketing,Semantic question about digital marketing (Difficulty 5),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,5
+q_assessment_digital_marketing_5_gen_1,assessment_digital_marketing,Semantic question about digital marketing (Difficulty 5),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,5
+q_assessment_digital_marketing_5_gen_2,assessment_digital_marketing,Semantic question about digital marketing (Difficulty 5),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,5
+q_assessment_embedded_1_gen_0,assessment_embedded,Semantic question about embedded (Difficulty 1),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,1
+q_assessment_embedded_1_gen_1,assessment_embedded,Semantic question about embedded (Difficulty 1),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,1
+q_assessment_embedded_2_gen_0,assessment_embedded,Semantic question about embedded (Difficulty 2),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,2
+q_assessment_embedded_2_gen_1,assessment_embedded,Semantic question about embedded (Difficulty 2),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,2
+q_assessment_embedded_3_gen_0,assessment_embedded,Semantic question about embedded (Difficulty 3),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,3
+q_assessment_embedded_3_gen_1,assessment_embedded,Semantic question about embedded (Difficulty 3),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,3
+q_assessment_embedded_3_gen_2,assessment_embedded,Semantic question about embedded (Difficulty 3),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,3
+q_assessment_embedded_4_gen_0,assessment_embedded,Semantic question about embedded (Difficulty 4),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,4
+q_assessment_embedded_4_gen_1,assessment_embedded,Semantic question about embedded (Difficulty 4),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,4
+q_assessment_embedded_4_gen_2,assessment_embedded,Semantic question about embedded (Difficulty 4),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,4
+q_assessment_embedded_5_gen_0,assessment_embedded,Semantic question about embedded (Difficulty 5),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,5
+q_assessment_embedded_5_gen_1,assessment_embedded,Semantic question about embedded (Difficulty 5),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,5
+q_assessment_embedded_5_gen_2,assessment_embedded,Semantic question about embedded (Difficulty 5),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,5
+q_assessment_freelancing_khamsat_1_gen_0,assessment_freelancing_khamsat,Semantic question about freelancing khamsat (Difficulty 1),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,1
+q_assessment_freelancing_khamsat_1_gen_1,assessment_freelancing_khamsat,Semantic question about freelancing khamsat (Difficulty 1),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,1
+q_assessment_freelancing_khamsat_1_gen_2,assessment_freelancing_khamsat,Semantic question about freelancing khamsat (Difficulty 1),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,1
+q_assessment_freelancing_khamsat_2_gen_0,assessment_freelancing_khamsat,Semantic question about freelancing khamsat (Difficulty 2),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,2
+q_assessment_freelancing_khamsat_2_gen_1,assessment_freelancing_khamsat,Semantic question about freelancing khamsat (Difficulty 2),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,2
+q_assessment_freelancing_khamsat_2_gen_2,assessment_freelancing_khamsat,Semantic question about freelancing khamsat (Difficulty 2),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,2
+q_assessment_freelancing_khamsat_3_gen_0,assessment_freelancing_khamsat,Semantic question about freelancing khamsat (Difficulty 3),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,3
+q_assessment_freelancing_khamsat_3_gen_1,assessment_freelancing_khamsat,Semantic question about freelancing khamsat (Difficulty 3),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,3
+q_assessment_freelancing_khamsat_3_gen_2,assessment_freelancing_khamsat,Semantic question about freelancing khamsat (Difficulty 3),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,3
+q_assessment_freelancing_khamsat_4_gen_0,assessment_freelancing_khamsat,Semantic question about freelancing khamsat (Difficulty 4),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,4
+q_assessment_freelancing_khamsat_4_gen_1,assessment_freelancing_khamsat,Semantic question about freelancing khamsat (Difficulty 4),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,4
+q_assessment_freelancing_khamsat_4_gen_2,assessment_freelancing_khamsat,Semantic question about freelancing khamsat (Difficulty 4),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,4
+q_assessment_freelancing_khamsat_5_gen_0,assessment_freelancing_khamsat,Semantic question about freelancing khamsat (Difficulty 5),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,5
+q_assessment_freelancing_khamsat_5_gen_1,assessment_freelancing_khamsat,Semantic question about freelancing khamsat (Difficulty 5),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,5
+q_assessment_freelancing_khamsat_5_gen_2,assessment_freelancing_khamsat,Semantic question about freelancing khamsat (Difficulty 5),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,5
+q_assessment_iot_1_gen_0,assessment_iot,Semantic question about iot (Difficulty 1),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,1
+q_assessment_iot_1_gen_1,assessment_iot,Semantic question about iot (Difficulty 1),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,1
+q_assessment_iot_2_gen_0,assessment_iot,Semantic question about iot (Difficulty 2),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,2
+q_assessment_iot_2_gen_1,assessment_iot,Semantic question about iot (Difficulty 2),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,2
+q_assessment_iot_3_gen_0,assessment_iot,Semantic question about iot (Difficulty 3),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,3
+q_assessment_iot_3_gen_1,assessment_iot,Semantic question about iot (Difficulty 3),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,3
+q_assessment_iot_4_gen_0,assessment_iot,Semantic question about iot (Difficulty 4),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,4
+q_assessment_iot_4_gen_1,assessment_iot,Semantic question about iot (Difficulty 4),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,4
+q_assessment_iot_4_gen_2,assessment_iot,Semantic question about iot (Difficulty 4),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,4
+q_assessment_iot_5_gen_0,assessment_iot,Semantic question about iot (Difficulty 5),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,5
+q_assessment_iot_5_gen_1,assessment_iot,Semantic question about iot (Difficulty 5),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,5
+q_assessment_iot_5_gen_2,assessment_iot,Semantic question about iot (Difficulty 5),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,5
+q_assessment_python_1_gen_0,assessment_python,Semantic question about python (Difficulty 1),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,1
+q_assessment_python_1_gen_1,assessment_python,Semantic question about python (Difficulty 1),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,1
+q_assessment_python_2_gen_0,assessment_python,Semantic question about python (Difficulty 2),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,2
+q_assessment_python_2_gen_1,assessment_python,Semantic question about python (Difficulty 2),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,2
+q_assessment_python_3_gen_0,assessment_python,Semantic question about python (Difficulty 3),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,3
+q_assessment_python_3_gen_1,assessment_python,Semantic question about python (Difficulty 3),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,3
+q_assessment_python_4_gen_0,assessment_python,Semantic question about python (Difficulty 4),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,4
+q_assessment_python_4_gen_1,assessment_python,Semantic question about python (Difficulty 4),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,4
+q_assessment_python_5_gen_0,assessment_python,Semantic question about python (Difficulty 5),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,5
+q_assessment_python_5_gen_1,assessment_python,Semantic question about python (Difficulty 5),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,5
+q_assessment_python_5_gen_2,assessment_python,Semantic question about python (Difficulty 5),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,5
+q_assessment_testing_1_gen_0,assessment_testing,Semantic question about testing (Difficulty 1),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,1
+q_assessment_testing_1_gen_1,assessment_testing,Semantic question about testing (Difficulty 1),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,1
+q_assessment_testing_1_gen_2,assessment_testing,Semantic question about testing (Difficulty 1),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,1
+q_assessment_testing_2_gen_0,assessment_testing,Semantic question about testing (Difficulty 2),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,2
+q_assessment_testing_2_gen_1,assessment_testing,Semantic question about testing (Difficulty 2),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,2
+q_assessment_testing_2_gen_2,assessment_testing,Semantic question about testing (Difficulty 2),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,2
+q_assessment_testing_3_gen_0,assessment_testing,Semantic question about testing (Difficulty 3),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,3
+q_assessment_testing_3_gen_1,assessment_testing,Semantic question about testing (Difficulty 3),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,3
+q_assessment_testing_3_gen_2,assessment_testing,Semantic question about testing (Difficulty 3),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,3
+q_assessment_testing_4_gen_0,assessment_testing,Semantic question about testing (Difficulty 4),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,4
+q_assessment_testing_4_gen_1,assessment_testing,Semantic question about testing (Difficulty 4),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,4
+q_assessment_testing_4_gen_2,assessment_testing,Semantic question about testing (Difficulty 4),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,4
+q_assessment_testing_5_gen_0,assessment_testing,Semantic question about testing (Difficulty 5),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,5
+q_assessment_testing_5_gen_1,assessment_testing,Semantic question about testing (Difficulty 5),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,5
+q_assessment_testing_5_gen_2,assessment_testing,Semantic question about testing (Difficulty 5),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,5
+q_assessment_ux_1_gen_0,assessment_ux,Semantic question about ux (Difficulty 1),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,1
+q_assessment_ux_1_gen_1,assessment_ux,Semantic question about ux (Difficulty 1),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,1
+q_assessment_ux_1_gen_2,assessment_ux,Semantic question about ux (Difficulty 1),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,1
+q_assessment_ux_2_gen_0,assessment_ux,Semantic question about ux (Difficulty 2),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,2
+q_assessment_ux_2_gen_1,assessment_ux,Semantic question about ux (Difficulty 2),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,2
+q_assessment_ux_3_gen_0,assessment_ux,Semantic question about ux (Difficulty 3),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,3
+q_assessment_ux_3_gen_1,assessment_ux,Semantic question about ux (Difficulty 3),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,3
+q_assessment_ux_3_gen_2,assessment_ux,Semantic question about ux (Difficulty 3),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,3
+q_assessment_ux_4_gen_0,assessment_ux,Semantic question about ux (Difficulty 4),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,4
+q_assessment_ux_4_gen_1,assessment_ux,Semantic question about ux (Difficulty 4),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,4
+q_assessment_ux_4_gen_2,assessment_ux,Semantic question about ux (Difficulty 4),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,4
+q_assessment_ux_5_gen_0,assessment_ux,Semantic question about ux (Difficulty 5),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,5
+q_assessment_ux_5_gen_1,assessment_ux,Semantic question about ux (Difficulty 5),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,5
+q_assessment_ux_5_gen_2,assessment_ux,Semantic question about ux (Difficulty 5),multiple_choice,A,Correct semantic answer|Wrong answer 1|Wrong answer 2|Wrong answer 3,5

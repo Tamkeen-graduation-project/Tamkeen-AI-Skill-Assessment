@@ -1,0 +1,310 @@
+{
+  "course_slug": "ux",
+  "course_title": "User Experience Design",
+  "assessment_id": null,
+  "generated_at": "2026-05-12T12:13:10.670287+00:00",
+  "model_used": "gemini-2.5-flash",
+  "total_questions": 20,
+  "questions": [
+    {
+      "assessment_id": null,
+      "question_text": "In the Egyptian job market, which UX profile is most commonly sought after by companies?",
+      "simplified_text": "Which UX job is most wanted in Egypt?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "UX Writer",
+        "UI UX Designer",
+        "UX Researcher",
+        "UI Designer"
+      ],
+      "difficulty_level": 1,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "Which attribute of User Experience focuses on whether a product or service fulfills a user's needs or solves a problem?",
+      "simplified_text": "What UX quality means a product helps users or solves problems?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "Usable",
+        "Findable",
+        "Useful",
+        "Desirable"
+      ],
+      "difficulty_level": 1,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "According to the \"Elements of User Experience,\" which element is primarily concerned with defining the features and requirements of a product?",
+      "simplified_text": "Which UX element defines a product's features and needs?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "Strategy",
+        "Scope",
+        "Structure",
+        "Surface"
+      ],
+      "difficulty_level": 1,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "What type of wireframe is described as a quick, hand-drawn sketch, not focused on details, primarily for personal ideation?",
+      "simplified_text": "What are quick, hand-drawn wireframes called?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "High-fidelity",
+        "Medium-fidelity",
+        "Low-fidelity",
+        "Polished"
+      ],
+      "difficulty_level": 1,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "What is a primary disadvantage for a UX designer working in a service company, as mentioned in the transcript?",
+      "simplified_text": "What's a bad thing about being a UX designer in a service company?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "Lack of project diversity",
+        "Limited feedback channel with users",
+        "Inability to build a portfolio quickly",
+        "Seldom working with diverse teams"
+      ],
+      "difficulty_level": 2,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "Why is it stated that \"UX design is not about technology\" in the context of denying UX myths?",
+      "simplified_text": "Why is UX design not just about technology?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "UX only applies to digital products",
+        "UX is only about aesthetics",
+        "UX applies to any life experience, not just digital",
+        "Technology is a minor part of UX"
+      ],
+      "difficulty_level": 2,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "What is the main purpose of creating a \"Persona\" during the user research phase?",
+      "simplified_text": "Why do UX designers make \"Personas\"?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "To identify specific individual users",
+        "To transfer user feedback and image to the team",
+        "To simplify user interviews",
+        "To replace direct user interaction"
+      ],
+      "difficulty_level": 2,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "What is the significance of \"white space\" in visual design, despite being empty areas?",
+      "simplified_text": "Why is empty space important in design?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "It allows for more graphics and text",
+        "It helps users focus and read content",
+        "It indicates a lack of design elements",
+        "It makes the design look unfinished"
+      ],
+      "difficulty_level": 2,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "A user attempts to change their car seat position but finds the controls confusing and takes a long time to figure them out. Which UX attribute is primarily being violated?",
+      "simplified_text": "Car seat controls are confusing. Which UX quality is missing?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "Useful",
+        "Usable",
+        "Findable",
+        "Desirable"
+      ],
+      "difficulty_level": 3,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "A product manager tells the UX designer that users should be able to \"track their package.\" The designer asks for more details about how tracking will work (e.g., email confirmation vs. GPS). What is the designer trying to avoid?",
+      "simplified_text": "Designer asks for details on \"package tracking.\" What problem are they trying to stop?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "Stakeholder interviews",
+        "Scope creep",
+        "Ill-defined scope",
+        "Information architecture"
+      ],
+      "difficulty_level": 3,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "A user clicks a submit button on a form, but nothing happens on the screen. The user is confused about whether their input was accepted or if there was an error. What interaction design principle is being violated?",
+      "simplified_text": "User clicks submit, nothing changes. What design rule is broken?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "Using known elements",
+        "Providing feedback",
+        "Preventing errors",
+        "User flow"
+      ],
+      "difficulty_level": 3,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "A mobile application asks a user to remember a specific code from one screen and then input it into a text field on a subsequent screen. Which best practice for effective UX design is being disregarded?",
+      "simplified_text": "App makes user remember a code for next screen. What good design rule is ignored?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "Reduce steps",
+        "Visual explanations",
+        "Don't make users remember",
+        "Allow undo"
+      ],
+      "difficulty_level": 3,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "A UX designer working on an existing e-commerce website decides to change the color and placement of payment buttons without understanding their original purpose. This change unexpectedly leads to a decrease in payment completion rates. This scenario best illustrates which concept regarding the \"Elements of User Experience\"?",
+      "simplified_text": "Changing payment buttons causes fewer sales. What does this show about UX elements?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "Surface changes only affect aesthetics",
+        "Elements are isolated and don't affect each other",
+        "Decisions in one element can impact others, even 'Strategy'",
+        "Visual design is independent of business goals"
+      ],
+      "difficulty_level": 4,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "During stakeholder interviews, a marketing manager identifies that a key \"differentiator\" for their product is a unique \"wallet\" feature that competitors lack. How does understanding this differentiator directly contribute to the \"Strategy\" element of UX?",
+      "simplified_text": "Knowing what makes a product special helps with which UX element?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "It helps define specific features for the 'Scope' element",
+        "It informs the visual design choices in the 'Surface' element",
+        "It clarifies what value the product offers to users and why they choose it",
+        "It dictates the number of pages in the 'Structure' element"
+      ],
+      "difficulty_level": 4,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "A user lands on a product page within an e-commerce website and is unable to quickly determine their current location within the site's hierarchy or how to return to the main category. Which navigation design principle is most likely lacking?",
+      "simplified_text": "User is lost on a website page. What navigation rule is missing?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "Providing filter features",
+        "Ensuring correct expectations",
+        "Using visual indication of current location",
+        "Reducing steps for tasks"
+      ],
+      "difficulty_level": 4,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "Why is \"usability testing\" considered a crucial step before full development and delivery of a final product, even if it adds a phase to the process?",
+      "simplified_text": "Why test usability before building the whole product?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "To ensure the visual design is perfect",
+        "To gather user feedback on specific UI elements only",
+        "To identify and fix user problems at a lower cost than post-launch",
+        "To guarantee all features are implemented correctly"
+      ],
+      "difficulty_level": 4,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "A UX designer enjoys working on varied projects and building a portfolio quickly. Based on the transcript, which type of company would be the most suitable environment for this designer?",
+      "simplified_text": "Designer likes varied projects and fast portfolio building. What company type is best?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "A startup focused on a single brand",
+        "A service company working with multiple clients",
+        "A freelance role with limited learning opportunities",
+        "A large corporation with specialized roles"
+      ],
+      "difficulty_level": 5,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "A designer is creating a web page with many different elements. To ensure the design feels organized and interconnected, what visual design principle should be prioritized?",
+      "simplified_text": "Many elements on a page. What design rule makes it look neat and linked?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "Emphasis",
+        "White Space",
+        "Alignment",
+        "Sequencing"
+      ],
+      "difficulty_level": 5,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "A website makes it easy for users to subscribe to its service but creates a very complex, multi-step process involving customer service contact to cancel the subscription. Which \"Dark Pattern\" is this website most likely employing?",
+      "simplified_text": "Easy to sign up, hard to cancel. What bad design trick is this?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "Privacy Zuckring",
+        "Misdirection",
+        "Roach Motel",
+        "Forced Continuity"
+      ],
+      "difficulty_level": 5,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "When observing users interacting with a product, a designer notices that while users claim to have no problems, they take significantly longer than average to complete certain tasks. What is the best action for the designer to take based on this observation?",
+      "simplified_text": "Users say no problems, but tasks take too long. What should the designer do?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "Dismiss the observation as users are happy",
+        "Trust the users' verbal feedback over observation",
+        "Differentiate between verbal feedback and actual observed behavior to identify issues",
+        "Immediately redesign the entire task flow without further analysis"
+      ],
+      "difficulty_level": 5,
+      "isDeleted": false
+    }
+  ]
+}

@@ -1,0 +1,310 @@
+{
+  "course_slug": "digital_marketing",
+  "course_title": "Digital Marketing",
+  "assessment_id": null,
+  "generated_at": "2026-05-12T12:13:10.645815+00:00",
+  "model_used": "gemini-2.5-flash",
+  "total_questions": 20,
+  "questions": [
+    {
+      "assessment_id": null,
+      "question_text": "Marketing aims to satisfy the customer and achieve what for the company?",
+      "simplified_text": "Marketing satisfies customers and what for company?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "Increase production costs",
+        "Decrease market share",
+        "Be profitable",
+        "Reduce product quality"
+      ],
+      "difficulty_level": 1,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "How is digital marketing primarily defined?",
+      "simplified_text": "What is digital marketing?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "Selling products exclusively online",
+        "Applying marketing using technology",
+        "Creating social media campaigns",
+        "Only traditional marketing"
+      ],
+      "difficulty_level": 1,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "What is the main purpose of marketing research?",
+      "simplified_text": "What is marketing research for?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "To advertise new products",
+        "To collect and analyze information to solve a specific problem",
+        "To directly sell to customers",
+        "To manage company finances"
+      ],
+      "difficulty_level": 1,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "What is the primary mission of branding?",
+      "simplified_text": "What is branding's main job?",
+      "question_type": "multiple_choice",
+      "correct_answer": "D",
+      "options": [
+        "To set product prices",
+        "To distribute products to stores",
+        "To manage customer complaints",
+        "To create a mental and emotional image of a product or service"
+      ],
+      "difficulty_level": 1,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "How does market research differ from marketing research in terms of focus?",
+      "simplified_text": "Market research vs. marketing research: What's their main difference?",
+      "question_type": "multiple_choice",
+      "correct_answer": "A",
+      "options": [
+        "Market research focuses on market size and segments, while marketing research can examine ad effectiveness and brand elements",
+        "Market research focuses on ad effectiveness, while marketing research focuses on market size",
+        "They are identical terms and can be used interchangeably",
+        "Market research is only for online markets, marketing research is for traditional markets"
+      ],
+      "difficulty_level": 2,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "What is the primary distinction between the roles of a Data Engineer and a Data Analyst in digital marketing?",
+      "simplified_text": "Data Engineer vs. Data Analyst: What's their main difference?",
+      "question_type": "multiple_choice",
+      "correct_answer": "A",
+      "options": [
+        "Data Engineers define the setup for data collection, while Data Analysts work on prepared data to extract insights",
+        "Data Engineers analyze data, while Data Analysts collect it",
+        "Data Engineers only work with social media data, Data Analysts work with all data",
+        "Data Engineers are senior to Data Analysts in all companies"
+      ],
+      "difficulty_level": 2,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "How do email marketers ensure their strategy aligns with the company's overall message?",
+      "simplified_text": "How do email marketers match company's message?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "By working independently on all campaigns",
+        "By only sending promotional emails",
+        "By collaborating with the entire marketing team",
+        "By focusing solely on customer acquisition"
+      ],
+      "difficulty_level": 2,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "What is the purpose of the \"Strategy\" stage within the strategic marketing plan?",
+      "simplified_text": "What is the \"Strategy\" part of a marketing plan?",
+      "question_type": "multiple_choice",
+      "correct_answer": "D",
+      "options": [
+        "To define who will do what and when",
+        "To analyze the current situation of the brand",
+        "To set up reporting systems and follow-up meetings",
+        "To outline how to move from the current situation to the desired objectives"
+      ],
+      "difficulty_level": 2,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "During a political campaign, messages are tailored to specific voter segments based on their psychological profiles. Which digital marketing technique is being applied?",
+      "simplified_text": "Tailoring messages for specific voter groups. What technique is this?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "Broad demographic advertising",
+        "Mass media outreach",
+        "Microtargeting",
+        "General public relations"
+      ],
+      "difficulty_level": 3,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "An SEO specialist identifies keywords with high monthly search volume and low difficulty. What is the next logical step in optimizing a website page for these keywords?",
+      "simplified_text": "SEO finds good keywords. What happens next for the website?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "Immediately launch paid ads for these keywords",
+        "Create specific content for each keyword and strategically place them on the website",
+        "Focus solely on improving website speed",
+        "Ignore off-page SEO entirely"
+      ],
+      "difficulty_level": 3,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "A company explicitly states that \"every interaction with our service will be seamless and satisfying.\" Which branding element is this company emphasizing?",
+      "simplified_text": "Company promises 'easy, happy service.' What branding element is this?",
+      "question_type": "multiple_choice",
+      "correct_answer": "A",
+      "options": [
+        "Brand Promise",
+        "Brand Values",
+        "Brand Definition",
+        "Brand Identity"
+      ],
+      "difficulty_level": 3,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "A social media group for a brand has many active members. The brand wants to ensure interactions remain positive and on-brand, even when customers are angry. Which role is primarily responsible for setting the guidelines for these interactions?",
+      "simplified_text": "Who sets rules for social media groups to keep talks positive?",
+      "question_type": "multiple_choice",
+      "correct_answer": "D",
+      "options": [
+        "Content Writer",
+        "Graphic Designer",
+        "Media Buyer",
+        "Community Manager"
+      ],
+      "difficulty_level": 3,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "In the context of the evolving marketing landscape, how has the relationship between traditional and digital marketing changed?",
+      "simplified_text": "How did traditional and digital marketing change together?",
+      "question_type": "multiple_choice",
+      "correct_answer": "A",
+      "options": [
+        "They have become increasingly integrated, with digital often taking a primary role in some projects",
+        "Digital marketing has completely replaced traditional marketing",
+        "Traditional marketing now solely focuses on online ads",
+        "Digital marketing is only used for small companies, traditional for large ones"
+      ],
+      "difficulty_level": 4,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "While both write content, what distinguishes a Copywriter's primary focus from a Content Writer's?",
+      "simplified_text": "Copywriter vs. Content Writer: What's their main difference?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "Copywriters write technical manuals, Content Writers write product names",
+        "Copywriters focus on persuasive advertising and SEO, while Content Writers provide useful, informative, or entertaining content",
+        "Copywriters only work for traditional ads, Content Writers only for digital",
+        "Content Writers need high social intelligence, Copywriters need high IQ"
+      ],
+      "difficulty_level": 4,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "What is the primary relationship between an Affiliate Marketing Manager and an Affiliate Marketer?",
+      "simplified_text": "Affiliate Manager vs. Affiliate Marketer: How do they work together?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "The Affiliate Marketer sets the overall policies for the program",
+        "They both perform the same tasks but for different brands",
+        "The Affiliate Marketing Manager sets policies and guidelines for the Affiliate Marketer to follow",
+        "The Affiliate Marketer directly manages the Affiliate Marketing Manager"
+      ],
+      "difficulty_level": 4,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "A company wants to understand customer behavior both on and off its social media pages, including their website visits and purchases. Which type of data is most crucial for this comprehensive understanding?",
+      "simplified_text": "Company wants to know customer online and offline actions. What data is key?",
+      "question_type": "multiple_choice",
+      "correct_answer": "D",
+      "options": [
+        "Only demographic data",
+        "Geographic data",
+        "Third-party data only",
+        "Behavioral data (on-premise and off-premise)"
+      ],
+      "difficulty_level": 4,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "Why is the \"Control/Measurement Plan\" stage critical in a strategic marketing plan?",
+      "simplified_text": "Why is the \"Control Plan\" important in marketing?",
+      "question_type": "multiple_choice",
+      "correct_answer": "A",
+      "options": [
+        "It defines KPIs, monitors results, and allows for adjustments and alternative plans if goals are not met",
+        "It ensures that only traditional marketing methods are used",
+        "It's where the initial budget is allocated",
+        "It is solely focused on generating new ideas for content"
+      ],
+      "difficulty_level": 5,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "Given that visual content is highlighted as a powerful influence on audiences, why do large companies allocate a significant portion of their marketing budget to video ad production and distribution?",
+      "simplified_text": "Why do big companies spend a lot on video ads?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "Because video ads are the cheapest form of advertising",
+        "To influence audiences powerfully and effectively",
+        "To avoid traditional marketing altogether",
+        "Because only small companies use text-based ads"
+      ],
+      "difficulty_level": 5,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "The transcript emphasizes that a digital marketing professional needs \"love of continuous learning.\" Why is this skill particularly vital in the digital marketing field?",
+      "simplified_text": "Why is always learning key for digital marketing?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "Because the field rarely changes",
+        "To avoid needing IT tools",
+        "Due to the rapid and significant developments and changes in the field",
+        "To specialize in only one narrow aspect of marketing"
+      ],
+      "difficulty_level": 5,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "If a brand wants to ensure potential customers perceive its identity through all five senses (sight, sound, touch, smell, and feel), which branding element would be most critical to meticulously develop?",
+      "simplified_text": "What branding part helps customers use all senses?",
+      "question_type": "multiple_choice",
+      "correct_answer": "D",
+      "options": [
+        "Brand Definition",
+        "Brand Values",
+        "Brand Promise",
+        "Brand Identity"
+      ],
+      "difficulty_level": 5,
+      "isDeleted": false
+    }
+  ]
+}

@@ -1,0 +1,310 @@
+{
+  "course_slug": "iot",
+  "course_title": "Internet of Things",
+  "assessment_id": null,
+  "generated_at": "2026-05-12T12:13:10.660093+00:00",
+  "model_used": "gemini-2.5-flash",
+  "total_questions": 20,
+  "questions": [
+    {
+      "assessment_id": null,
+      "question_text": "What is the primary characteristic that defines the 'Internet of Things'?",
+      "simplified_text": "What makes something 'Internet of Things'?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "Devices with large memory",
+        "Devices connected to the Internet",
+        "Devices that only use Wi-Fi",
+        "Devices that are battery-operated"
+      ],
+      "difficulty_level": 1,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "Which of the following is NOT listed as one of the five main categories of IoT applications?",
+      "simplified_text": "Which is NOT a main IoT app type?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "Smart Cities",
+        "Gaming",
+        "Medical Applications",
+        "Home/Consumer Applications"
+      ],
+      "difficulty_level": 1,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "What is the initial step in creating an IoT device to test an idea?",
+      "simplified_text": "First step to test an IoT device idea?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "Mass production",
+        "Selecting a CPU",
+        "Using a prototyping board",
+        "Developing a real-time operating system"
+      ],
+      "difficulty_level": 1,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "Which wireless technology is known for sending very small amounts of data over a very short distance (centimeters)?",
+      "simplified_text": "Which wireless tech sends small data short distance?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "LoRa",
+        "ZigBee",
+        "NFC",
+        "Bluetooth Low Energy"
+      ],
+      "difficulty_level": 1,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "Why are home/consumer IoT applications generally expected to have low revenue despite serving many devices?",
+      "simplified_text": "Why do home IoT apps make little money?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "They require expensive hardware",
+        "Users expect them to be free of charge",
+        "They use outdated wireless technologies",
+        "They are difficult to develop"
+      ],
+      "difficulty_level": 2,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "What is the primary trade-off when choosing a wireless technology that offers significant battery power saving for IoT devices?",
+      "simplified_text": "What do you give up for long battery life in IoT?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "Device size",
+        "Processing power",
+        "Bandwidth",
+        "Security features"
+      ],
+      "difficulty_level": 2,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "What is the main purpose of an IoT Application Enablement Platform (AEP)?",
+      "simplified_text": "What does an IoT AEP mostly do?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "To physically connect devices to the internet",
+        "To simplify IoT application development on the cloud",
+        "To manufacture IoT devices at scale",
+        "To provide mobile phone applications"
+      ],
+      "difficulty_level": 2,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "What distinguishes a 'real device' from a 'prototyping board' in IoT development?",
+      "simplified_text": "How is a real IoT device different from a test board?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "A real device uses standard USB connections",
+        "A real device is designed for low power consumption and specific components",
+        "A real device is only used for proof of concept",
+        "A real device cannot be mass-produced"
+      ],
+      "difficulty_level": 2,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "A city wants to implement a smart lighting system that allows remote control of streetlights and monitors their working hours and light intensity. Which IoT application category does this fall under?",
+      "simplified_text": "City wants smart streetlights. What IoT type is this?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "Home/Consumer Applications",
+        "Medical Applications",
+        "Smart Cities/Industries",
+        "Mobility Applications"
+      ],
+      "difficulty_level": 3,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "A company is developing a new artificial pancreas that will be implanted in diabetic patients for continuous glucose monitoring and insulin delivery. What is the most significant challenge this company will face regarding the device's power source?",
+      "simplified_text": "New artificial pancreas. What's the biggest power problem?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "Finding a large enough battery",
+        "Ensuring the battery can be recharged frequently through surgery",
+        "Designing for extremely long battery life without frequent recharging",
+        "Connecting it to a constant external power supply"
+      ],
+      "difficulty_level": 3,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "An IoT developer is tasked with creating an application for tracking the movement of shipping containers across continents. Which component of the IoT value chain is critical for ensuring reliable data transfer over vast distances, including oceans and deserts?",
+      "simplified_text": "Tracking shipping containers globally. Which part of IoT helps send data far?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "Wireless Sensor Networks like ZigBee",
+        "Fixed Ethernet Gateways",
+        "Satellite Carrier Networks",
+        "Bluetooth Low Energy"
+      ],
+      "difficulty_level": 3,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "A factory manager wants to monitor the quality of products, energy consumption, and resource usage on multiple production lines in real-time. Which IoT application category is most relevant for this scenario, and what kind of revenue can be expected from such applications?",
+      "simplified_text": "Factory needs to watch production. What IoT type and money?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "Home Applications, low revenue",
+        "Smart Cities/Industries, high revenue",
+        "Medical Applications, variable revenue",
+        "Mobility Applications, moderate revenue"
+      ],
+      "difficulty_level": 3,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "Compare the data handling capabilities of traditional databases (like Oracle) with those required for IoT big data. What is a key difference identified in the transcript?",
+      "simplified_text": "How are IoT data needs different from normal databases?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "Traditional databases are inherently designed for the high volume and velocity of IoT data.",
+        "IoT data requires storage that is elastic and can handle millions of queries per hour, unlike traditional disk-based databases.",
+        "Traditional databases are more efficient for distributed data.",
+        "IoT data typically has a much larger size per individual reading than traditional data."
+      ],
+      "difficulty_level": 4,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "How does the 'Intel Inside' concept apply to IoT gateways, according to the transcript?",
+      "simplified_text": "How does 'Intel Inside' work for IoT gateways?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "Intel manufactures the entire gateway device",
+        "Intel provides the operating system for the gateway",
+        "Intel supplies boards with various modems to gateway manufacturers",
+        "Intel is the sole provider of carrier networks for gateways"
+      ],
+      "difficulty_level": 4,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "What is the main distinction between the wireless technologies used *before* an IoT gateway (e.g., LoRa, ZigBee) and those considered *carrier networks* (e.g., SigFox, 3G/4G)?",
+      "simplified_text": "How are wireless tech before a gateway different from carrier networks?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "Technologies before the gateway are always high bandwidth",
+        "Carrier networks only support short-range communication",
+        "Technologies before the gateway are for device-to-gateway, while carrier networks transport data to the internet",
+        "Only carrier networks can save power"
+      ],
+      "difficulty_level": 4,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "When comparing Narrowband IoT (NB-IoT) with SigFox, what is identified as an advantage of NB-IoT and a drawback of SigFox, respectively?",
+      "simplified_text": "NB-IoT vs SigFox: what is better about NB-IoT and worse about SigFox?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "NB-IoT has lower power consumption; SigFox has higher bandwidth.",
+        "NB-IoT has higher bandwidth; SigFox modems are cheaper.",
+        "NB-IoT offers global roaming; SigFox is limited to local networks.",
+        "NB-IoT modems are cheaper; SigFox has greater range."
+      ],
+      "difficulty_level": 4,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "A developer is considering whether to use an Application Enablement Platform (AEP) for a complex IoT project involving millions of devices and real-time critical actions. Based on the transcript, what is the most compelling reason to use an AEP instead of building everything from scratch?",
+      "simplified_text": "Should a developer use an AEP for a big IoT project? Why?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "AEPs guarantee lower hardware costs for devices",
+        "AEPs simplify development, offering scalability, reliability, and performance that are hard to achieve from scratch",
+        "AEPs completely eliminate the need for programmers",
+        "AEPs only support a single application protocol, simplifying integration"
+      ],
+      "difficulty_level": 5,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "When designing an IoT solution for monitoring soil moisture in remote agricultural fields, which wireless technology would be the most suitable choice, considering the need for long battery life and potentially long distances?",
+      "simplified_text": "Best wireless tech for remote farm soil sensors, long battery?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "Wi-Fi",
+        "Bluetooth",
+        "SigFox",
+        "NFC"
+      ],
+      "difficulty_level": 5,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "A company is manufacturing smart home appliances (refrigerators, washing machines). To offer comprehensive IoT services, should they focus on developing all aspects of the IoT value chain themselves, or should they partner with an 'End-to-End System Integrator'?",
+      "simplified_text": "Should a smart appliance company build all IoT parts or get help?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "They should build everything themselves to maximize control",
+        "They should only focus on the device manufacturing and leave the rest to an End-to-End System Integrator",
+        "They should only develop the cloud application and outsource device production",
+        "They should hire more programmers to cover all aspects"
+      ],
+      "difficulty_level": 5,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "A mobile network operator (MNO) is considering offering IoT connectivity. To compete with low-power wide-area network (LPWAN) providers like SigFox, what strategic modification to their existing LTE network would be most effective, according to the transcript?",
+      "simplified_text": "How can mobile networks compete for IoT with low-power options?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "Increase LTE bandwidth for all devices",
+        "Develop a completely new network infrastructure",
+        "Modify LTE to create Narrowband IoT (NB-IoT) with reduced power consumption and bandwidth",
+        "Focus solely on providing 5G connectivity"
+      ],
+      "difficulty_level": 5,
+      "isDeleted": false
+    }
+  ]
+}

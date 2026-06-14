@@ -1,0 +1,310 @@
+{
+  "course_slug": "testing",
+  "course_title": "Software Testing",
+  "assessment_id": null,
+  "generated_at": "2026-05-12T12:13:10.667065+00:00",
+  "model_used": "gemini-2.5-flash",
+  "total_questions": 20,
+  "questions": [
+    {
+      "assessment_id": null,
+      "question_text": "What is the primary purpose of software testing?",
+      "simplified_text": "What is software testing about?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "Writing code for new features.",
+        "Running software to try functions and user actions.",
+        "Designing the user interface.",
+        "Managing project timelines."
+      ],
+      "difficulty_level": 1,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "In software testing, what term describes a deviation of the actual result from the expected result?",
+      "simplified_text": "What is a software problem called?",
+      "question_type": "multiple_choice",
+      "correct_answer": "D",
+      "options": [
+        "An error.",
+        "A fault.",
+        "A failure.",
+        "A bug."
+      ],
+      "difficulty_level": 1,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "Who is primarily responsible for performing unit testing?",
+      "simplified_text": "Who does the first software tests?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "The end-user.",
+        "The project manager.",
+        "The developer.",
+        "The quality assurance team."
+      ],
+      "difficulty_level": 1,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "Which characteristic defines Black Box Testing?",
+      "simplified_text": "What is Black Box Testing?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "Testing with full knowledge of the internal code structure.",
+        "Testing based on user experience without seeing internal code.",
+        "Testing individual software components.",
+        "Testing interactions between integrated modules."
+      ],
+      "difficulty_level": 1,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "Why is discovering bugs in the early stages of software development considered beneficial?",
+      "simplified_text": "Why fix problems early in software?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "It allows for more complex features to be added later.",
+        "It is easier and faster to fix bugs in smaller units.",
+        "It reduces the need for user acceptance testing.",
+        "It guarantees 100% error-free software."
+      ],
+      "difficulty_level": 2,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "A developer writes code that incorrectly calculates the square of a number. This mistake in the code is best described as which term?",
+      "simplified_text": "What is a code mistake called?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "A failure, because it produces a wrong result.",
+        "An error, because it's a human mistake in coding.",
+        "A bug, because it's a problem in the software.",
+        "A defect, which is the same as a failure."
+      ],
+      "difficulty_level": 2,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "What is the primary purpose of a test suite?",
+      "simplified_text": "What is a test suite for?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "To document individual test steps.",
+        "To execute a single test case.",
+        "To group related test cases for a specific module.",
+        "To report a single bug to the developer."
+      ],
+      "difficulty_level": 2,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "What is the main idea behind the Equivalence Partitioning technique?",
+      "simplified_text": "How does Equivalence Partitioning work?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "To test every single possible input value.",
+        "To divide input data into valid and invalid groups and test a representative from each.",
+        "To only test the boundary values of an input range.",
+        "To create an infinite number of test cases for comprehensive coverage."
+      ],
+      "difficulty_level": 2,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "A software specification states that a zip code field is required but does not specify the exact error message text. The developer implements a message that says \"Error\". What type of bug is this, according to the provided lessons?",
+      "simplified_text": "What bug is an unclear error message?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "A software bug, because the message is too short.",
+        "A functional bug, because the field is still required.",
+        "A software specification bug, because the requirement was incomplete.",
+        "A critical bug, because it impacts user experience."
+      ],
+      "difficulty_level": 3,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "A website has two identified issues: (1) a button color is incorrect, and (2) users cannot log in to access their accounts. Which issue should receive Priority 1?",
+      "simplified_text": "Which problem needs fixing first?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "The incorrect button color.",
+        "The inability for users to log in.",
+        "Both should receive Priority 1.",
+        "Neither, as these are minor issues."
+      ],
+      "difficulty_level": 3,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "During test case execution, a tester reaches a step that requires clicking a \"Make Payment\" button, but the button is missing from the interface. How should the tester classify this test case?",
+      "simplified_text": "What if a button is missing during testing?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "Pass, because the software didn't crash.",
+        "Fail, because the expected action couldn't be performed.",
+        "Blocked, because the test cannot proceed.",
+        "Inconclusive, needing further investigation."
+      ],
+      "difficulty_level": 3,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "A main module needs to call a smaller function that hasn't been developed yet. To proceed with top-down integration testing, what should the tester use for the undeveloped function?",
+      "simplified_text": "What helps test a main part if a small part isn't ready?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "A driver.",
+        "A stub.",
+        "A complete code rewrite.",
+        "An external document."
+      ],
+      "difficulty_level": 3,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "A tester is working on the acceptance testing phase of a new e-commerce website. Which testing technique would be most appropriate for this phase, and why?",
+      "simplified_text": "What test is best for final user checks?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "White Box Testing, because it focuses on internal code structure.",
+        "Black Box Testing, because it mimics the end-user's perspective without code knowledge.",
+        "Unit Testing, because it ensures individual components work.",
+        "Integration Testing, because it checks module interactions."
+      ],
+      "difficulty_level": 4,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "If a software project uses a Bottom-Up Integration Testing approach, what type of dummy code is typically employed, and what does it simulate?",
+      "simplified_text": "What dummy code is used in Bottom-Up testing?",
+      "question_type": "multiple_choice",
+      "correct_answer": "D",
+      "options": [
+        "Stubs, to simulate higher-level modules.",
+        "Drivers, to simulate lower-level functions.",
+        "Stubs, to simulate undeveloped functions called by the main module.",
+        "Drivers, to simulate the main program calling tested units."
+      ],
+      "difficulty_level": 4,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "A team is performing System Testing. Which of the following activities would fall under non-functional testing?",
+      "simplified_text": "Which is a non-functional test?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "Verifying that a login button successfully authenticates users.",
+        "Checking how the system performs under a heavy load of simultaneous users.",
+        "Confirming that all calculations in a financial module are accurate.",
+        "Ensuring that data entry fields correctly accept valid inputs."
+      ],
+      "difficulty_level": 4,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "If a test case procedure includes redundant steps and hardcoded values that might change, what is a likely consequence for future testing efforts?",
+      "simplified_text": "What happens if test steps are bad?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "It will significantly reduce the number of required test cases.",
+        "It will make bug discovery easier and faster.",
+        "It will lead to wasted time in updating test cases for small software changes.",
+        "It will guarantee more reliable and accurate test results."
+      ],
+      "difficulty_level": 4,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "To improve the maintainability of test cases, which action is considered a best practice when dealing with frequently repeated blocks of steps, such as creating a new user account?",
+      "simplified_text": "How to make repeated test steps easier to manage?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "Rewrite the full block of steps in every test case where it's needed.",
+        "Omit these steps entirely, assuming the tester knows them.",
+        "Externalize these steps into a separate document and link to it in the test case.",
+        "Reduce the number of test cases to avoid repetition."
+      ],
+      "difficulty_level": 5,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "A software development team is building a complex system where the lowest-level modules are stable and well-understood, but the higher-level GUI is still under heavy development. Which integration testing approach would be most efficient in this scenario?",
+      "simplified_text": "Which testing order is best for stable small parts, changing big parts?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "Big Bang, to test everything at once.",
+        "Top-Down, to focus on the GUI first and then integrate smaller modules.",
+        "Bottom-Up, to build confidence from stable lower layers upwards.",
+        "Random integration, to find bugs unpredictably."
+      ],
+      "difficulty_level": 5,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "A tester aims to find as many bugs as possible by pushing the software to its limits with unexpected inputs. This approach aligns with which test case objective?",
+      "simplified_text": "What test goal tries to break the software?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "Test to Pass, ensuring basic functionality.",
+        "Test to Confirm, verifying bug fixes.",
+        "Test to Fail, using strategies to discover flaws.",
+        "Test to Automate, for efficiency."
+      ],
+      "difficulty_level": 5,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "When testing a numerical input field that accepts values from 1 to 100 (inclusive), combining Equivalence Partitioning (EP) and Boundary Value Analysis (BVA) leads to an optimal number of test cases. What is this optimal number and why?",
+      "simplified_text": "How many tests for numbers 1-100 using EP and BVA?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "3, because EP covers the valid, above, and below ranges.",
+        "6, because BVA tests all boundary points and adjacent values.",
+        "5, because EP covers the valid range and BVA handles boundaries, with some overlap.",
+        "7, to include a random value from the valid range."
+      ],
+      "difficulty_level": 5,
+      "isDeleted": false
+    }
+  ]
+}

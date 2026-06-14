@@ -4,7 +4,7 @@ generate_data.py
 Generates synthetic training data for the Accessibility-Aware Skill Assessment Model.
 
 Reads REAL user and course data from the Tamkeen Recommendation System project
-(../tamkeen-recommendation-system/out_small/) and simulates quiz interactions.
+(data/raw/) and simulates quiz interactions.
 
 The key innovation: response time is inflated by disability-specific multipliers so the
 model can learn to distinguish "slow because unskilled" from "slow because of
@@ -34,10 +34,8 @@ np.random.seed(SEED)
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
 
-# Read from the recommendation system's data
-RECOMMENDATION_DATA = os.path.join(
-    PROJECT_ROOT, "..", "tamkeen-recommendation-system", "out_small"
-)
+# Path to raw data (isolated from recommendation system)
+RECOMMENDATION_DATA = os.path.join(PROJECT_ROOT, "data", "raw")
 
 OUTPUT_PATH = os.path.join(PROJECT_ROOT, "data", "processed", "assessment_training_data.csv")
 
@@ -129,7 +127,9 @@ def load_inputs():
     """Load users, courses, and questions from the recommendation system."""
     users_path = os.path.join(RECOMMENDATION_DATA, "users.csv")
     courses_path = os.path.join(RECOMMENDATION_DATA, "courses.csv")
-    questions_path = os.path.join(RECOMMENDATION_DATA, "questions.csv")
+    questions_path = os.path.join(RECOMMENDATION_DATA, "questions_v2.csv")
+    if not os.path.exists(questions_path):
+        questions_path = os.path.join(RECOMMENDATION_DATA, "questions.csv")
 
     for p in [users_path, courses_path, questions_path]:
         if not os.path.exists(p):

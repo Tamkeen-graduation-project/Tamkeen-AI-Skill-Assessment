@@ -72,84 +72,55 @@ DISABILITY_MULTIPLIERS = {
 # In production this would come from the database.
 # ---------------------------------------------------------------------------
 
-QUESTIONS: Dict[int, List[dict]] = {
-    1: [
-        {"id": "q1_1", "text": "What does HTML stand for?",
-         "options": ["Hyper Text Markup Language", "High Tech Modern Language",
-                     "Hyper Transfer Markup Language", "Home Tool Markup Language"],
-         "answer": 0},
-        {"id": "q1_2", "text": "Which symbol starts a comment in Python?",
-         "options": ["//", "#", "/*", "--"], "answer": 1},
-        {"id": "q1_3", "text": "What data type stores True or False?",
-         "options": ["String", "Integer", "Boolean", "Float"], "answer": 2},
-        {"id": "q1_4", "text": "What does CPU stand for?",
-         "options": ["Central Processing Unit", "Central Program Utility",
-                     "Computer Personal Unit", "Central Processor Unifier"],
-         "answer": 0},
-        {"id": "q1_5", "text": "Which tag makes text bold in HTML?",
-         "options": ["<i>", "<b>", "<u>", "<p>"], "answer": 1},
-    ],
-    2: [
-        {"id": "q2_1", "text": "What is the output of print(type([])) in Python?",
-         "options": ["<class 'tuple'>", "<class 'list'>",
-                     "<class 'dict'>", "<class 'set'>"], "answer": 1},
-        {"id": "q2_2", "text": "Which HTTP method is used to update a resource?",
-         "options": ["GET", "POST", "PUT", "DELETE"], "answer": 2},
-        {"id": "q2_3", "text": "What does CSS stand for?",
-         "options": ["Cascading Style Sheets", "Computer Style Sheets",
-                     "Creative Style System", "Cascading System Sheets"], "answer": 0},
-        {"id": "q2_4", "text": "Which keyword defines a function in Python?",
-         "options": ["func", "define", "def", "function"], "answer": 2},
-        {"id": "q2_5", "text": "What is a primary key in a database?",
-         "options": ["A password", "A unique identifier for each row",
-                     "A foreign table", "A column name"], "answer": 1},
-    ],
-    3: [
-        {"id": "q3_1", "text": "What is the time complexity of binary search?",
-         "options": ["O(n)", "O(log n)", "O(n^2)", "O(1)"], "answer": 1},
-        {"id": "q3_2", "text": "Which SQL clause filters grouped results?",
-         "options": ["WHERE", "HAVING", "GROUP BY", "ORDER BY"], "answer": 1},
-        {"id": "q3_3", "text": "What design pattern ensures only one instance of a class?",
-         "options": ["Factory", "Observer", "Singleton", "Strategy"], "answer": 2},
-        {"id": "q3_4", "text": "Which data structure uses FIFO?",
-         "options": ["Stack", "Queue", "Tree", "Graph"], "answer": 1},
-        {"id": "q3_5", "text": "What does REST stand for?",
-         "options": ["Representational State Transfer",
-                     "Remote Execution Standard Technology",
-                     "Resource State Transformation",
-                     "Reliable Efficient System Transfer"], "answer": 0},
-    ],
-    4: [
-        {"id": "q4_1", "text": "What is the space complexity of merge sort?",
-         "options": ["O(1)", "O(log n)", "O(n)", "O(n log n)"], "answer": 2},
-        {"id": "q4_2", "text": "Which protocol operates at the transport layer?",
-         "options": ["HTTP", "TCP", "DNS", "FTP"], "answer": 1},
-        {"id": "q4_3", "text": "What is a deadlock in operating systems?",
-         "options": ["A crashed process", "Two processes waiting for each other",
-                     "A memory leak", "A full disk"], "answer": 1},
-        {"id": "q4_4", "text": "What is the purpose of an index in a database?",
-         "options": ["Encrypt data", "Speed up queries",
-                     "Compress tables", "Validate input"], "answer": 1},
-        {"id": "q4_5", "text": "Which sorting algorithm is not comparison-based?",
-         "options": ["Quick Sort", "Merge Sort", "Counting Sort", "Heap Sort"],
-         "answer": 2},
-    ],
-    5: [
-        {"id": "q5_1", "text": "What theorem says a distributed system cannot have C, A, and P simultaneously?",
-         "options": ["CAP Theorem", "ACID Theorem",
-                     "Byzantine Theorem", "Raft Theorem"], "answer": 0},
-        {"id": "q5_2", "text": "What does the vanishing gradient problem affect in neural networks?",
-         "options": ["Output layer only", "Deep layers during backpropagation",
-                     "Data preprocessing", "Batch normalization"], "answer": 1},
-        {"id": "q5_3", "text": "What is the purpose of a semaphore?",
-         "options": ["Memory allocation", "Thread synchronization",
-                     "Garbage collection", "Compilation"], "answer": 1},
-        {"id": "q5_4", "text": "Which consistency model does DynamoDB use by default?",
-         "options": ["Strong", "Eventual", "Causal", "Linearizable"], "answer": 1},
-        {"id": "q5_5", "text": "What is the amortized time complexity of inserting into a dynamic array?",
-         "options": ["O(n)", "O(1)", "O(log n)", "O(n^2)"], "answer": 1},
-    ],
-}
+# ---------------------------------------------------------------------------
+# Question bank loader
+# Loads from data/raw/questions.csv at startup
+# ---------------------------------------------------------------------------
+
+QUESTIONS: Dict[str, Dict[int, List[dict]]] = {}  # assessment_id -> difficulty -> [questions]
+
+def load_questions_from_csv():
+    global QUESTIONS
+    base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    csv_path = os.path.join(base_dir, "data", "raw", "questions_v2.csv")
+    if not os.path.exists(csv_path):
+        csv_path = os.path.join(base_dir, "data", "raw", "questions.csv")
+    
+    if not os.path.exists(csv_path):
+        logger.warning(f"Questions CSV not found at {csv_path}. Using fallback questions.")
+        # Minimal fallback
+        QUESTIONS = {"default": {1: [{"id": "fallback", "text": "What is 1+1?", "options": ["1","2","3","4"], "answer": 1, "difficulty": 1}]}}
+        return
+
+    try:
+        df = pd.read_csv(csv_path)
+        count = 0
+        for _, row in df.iterrows():
+            a_id = str(row['assessment_id'])
+            diff = int(row['difficulty_level'])
+            
+            if a_id not in QUESTIONS:
+                QUESTIONS[a_id] = {}
+            if diff not in QUESTIONS[a_id]:
+                QUESTIONS[a_id][diff] = []
+            
+            # Options in CSV are piped: "Opt A|Opt B|Opt C|Opt D"
+            options = str(row['options']).split('|')
+            # Correct answer in CSV is 'A' (mapped to index 0)
+            answer_map = {'A': 0, 'B': 1, 'C': 2, 'D': 3, 'True': 0, 'False': 1}
+            ans_idx = answer_map.get(str(row['correct_answer']), 0)
+
+            QUESTIONS[a_id][diff].append({
+                "id": str(row['question_id']),
+                "text": str(row['question_text']),
+                "options": options,
+                "answer": ans_idx,
+                "difficulty": diff
+            })
+            count += 1
+        logger.info(f"Loaded {count} questions for {len(QUESTIONS)} assessments from CSV.")
+    except Exception as e:
+        logger.error(f"Error loading questions: {e}")
 
 
 # ---------------------------------------------------------------------------
@@ -221,34 +192,53 @@ class ResultResponse(BaseModel):
 # ---------------------------------------------------------------------------
 
 @app.on_event("startup")
-async def load_model():
+async def startup_event():
     global model_data
-
+    
+    # 1. Load model
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     model_path = os.path.join(base_dir, "models", "skill_predictor.pkl")
 
     if not os.path.exists(model_path):
         logger.error(f"Model not found: {model_path}")
-        return
-
-    model_data = joblib.load(model_path)
-    logger.info(f"Model loaded: {model_data['model_name']} "
-                f"(test acc {model_data['test_accuracy']:.4f})")
+    else:
+        model_data = joblib.load(model_path)
+        logger.info(f"Model loaded: {model_data['model_name']} "
+                    f"(test acc {model_data['test_accuracy']:.4f})")
+    
+    # 2. Load questions
+    load_questions_from_csv()
 
 
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
 
-def pick_question(difficulty: int, used_ids: set) -> Optional[dict]:
-    """Pick a random unused question at the target difficulty.
+def pick_question(difficulty: int, used_ids: set, assessment_id: str = "default") -> Optional[dict]:
+    """Pick a random unused question at the target difficulty for the given assessment.
     Falls back to adjacent difficulties if none available."""
     difficulty = max(1, min(5, difficulty))
+    
+    # Map course_id (e.g. course_7) to assessment_id (e.g. assessment_7) if needed
+    if assessment_id.startswith("course_"):
+        assessment_id = assessment_id.replace("course_", "assessment_")
+
+    # If the specific assessment doesn't exist, try 'assessment_0' or 'default' or any first available
+    if assessment_id not in QUESTIONS:
+        logger.warning(f"Assessment {assessment_id} not found in bank. Falling back.")
+        if "assessment_0" in QUESTIONS:
+            assessment_id = "assessment_0"
+        elif QUESTIONS:
+            assessment_id = list(QUESTIONS.keys())[0]
+        else:
+            return None
+
+    bank = QUESTIONS[assessment_id]
 
     for d in [difficulty, difficulty - 1, difficulty + 1, difficulty - 2, difficulty + 2]:
         if d < 1 or d > 5:
             continue
-        available = [q for q in QUESTIONS.get(d, []) if q["id"] not in used_ids]
+        available = [q for q in bank.get(d, []) if q["id"] not in used_ids]
         if available:
             return random.choice(available)
     return None
@@ -306,7 +296,7 @@ async def start_assessment(req: StartRequest):
     session_id = f"sess_{uuid.uuid4().hex[:12]}"
 
     # Start with medium difficulty (3)
-    first_q = pick_question(difficulty=3, used_ids=set())
+    first_q = pick_question(difficulty=3, used_ids=set(), assessment_id=req.course_id)
     if first_q is None:
         raise HTTPException(status_code=500, detail="No questions available")
 
@@ -378,7 +368,11 @@ async def submit_answer(req: SubmitRequest):
     new_diff = next_difficulty(current_q["difficulty"], is_correct)
     session["current_difficulty"] = new_diff
 
-    nq = pick_question(new_diff, session["used_ids"])
+    nq = pick_question(
+        difficulty=new_diff, 
+        used_ids=session["used_ids"], 
+        assessment_id=session["course_id"]
+    )
     if nq is None:
         session["finished"] = True
         session["current_question"] = None

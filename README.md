@@ -11,26 +11,28 @@ Traditional skill assessment systems penalize users with disabilities. A visuall
 ```
 tamkeen-skill-assessment/
 |-- data/
+|   |-- raw/                     # Local copies of users, courses, questions
 |   |-- processed/               # Generated training data
 |       |-- assessment_training_data.csv
 |-- scripts/
-|   |-- generate_data.py         # Synthetic data generator
+|   |-- generate_data.py         # Synthetic data generator (reads from data/raw/)
 |-- src/
+|   |-- api/                     # FastAPI backend
 |   |-- models/                  # Trained model artifacts (.pkl)
 |-- notebooks/
 |   |-- skill_assessment_model.ipynb   # Training & evaluation
 |-- docs/                        # Documentation
+|-- streamlit_app.py             # Streamlit visualization app
 |-- README.md
 |-- requirements.txt
-|-- .gitignore
 ```
 
-**Data Source:** User and course data is read from the sibling project
-`tamkeen-recommendation-system/out_small/` (100 users, 50 courses, 861 questions).
+**Data Source:** User and course data is stored locally in `data/raw/` for complete isolation.
+
 
 ## Disability Time Multipliers
 
-| Disability     | Multiplier | Reason                          |
+| Disability     | Multiplier | Reason                           |
 |----------------|------------|----------------------------------|
 | Visual         | x3.5       | Screen Reader overhead           |
 | Motor          | x2.5       | Switch / eye-tracking input      |
@@ -44,7 +46,7 @@ tamkeen-skill-assessment/
 # 1. Install dependencies
 pip install -r requirements.txt
 
-# 2. Generate synthetic data (reads from ../tamkeen-recommendation-system/out_small/)
+# 2. Generate synthetic data (reads from data/raw/)
 python scripts/generate_data.py
 
 # 3. Run the notebooks

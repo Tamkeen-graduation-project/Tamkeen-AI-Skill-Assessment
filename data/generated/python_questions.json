@@ -1,0 +1,310 @@
+{
+  "course_slug": "python",
+  "course_title": "Python Programming",
+  "assessment_id": null,
+  "generated_at": "2026-05-12T12:13:10.663291+00:00",
+  "model_used": "gemini-2.5-flash",
+  "total_questions": 20,
+  "questions": [
+    {
+      "assessment_id": null,
+      "question_text": "What is the official website for downloading Python?",
+      "simplified_text": "Where can you download Python?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "A. python.com",
+        "B. python.net",
+        "C. python.org",
+        "D. python.app"
+      ],
+      "difficulty_level": 1,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "What is the primary purpose of a \"docstring\" within a Python function?",
+      "simplified_text": "What is a docstring for in functions?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "A. To define the function's name.",
+        "B. To provide comments and documentation for the function.",
+        "C. To specify the return type of the function.",
+        "D. To declare global variables."
+      ],
+      "difficulty_level": 1,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "What operation does the `+` symbol perform when used with two strings in Python?",
+      "simplified_text": "What does `+` do with two text strings?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "A. Addition",
+        "B. Concatenation",
+        "C. Subtraction",
+        "D. Multiplication"
+      ],
+      "difficulty_level": 1,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "What keyword is used in Python to define the beginning of a function?",
+      "simplified_text": "What word starts a function definition?",
+      "question_type": "multiple_choice",
+      "correct_answer": "D",
+      "options": [
+        "A. func",
+        "B. define",
+        "C. method",
+        "D. def"
+      ],
+      "difficulty_level": 1,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "What is the primary difference between writing code in the Python Shell (IDLE) and writing it in a .py file?",
+      "simplified_text": "Shell code disappears; file code can be saved.",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "A. Shell code is automatically saved, while .py files are not.",
+        "B. Code in the Shell is temporary and lost upon closing, while .py files can be saved and reused.",
+        "C. .py files allow for immediate execution of single lines, unlike the Shell.",
+        "D. The Shell is used for complex programs, and .py files are for simple commands."
+      ],
+      "difficulty_level": 2,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "How does the integer division operator (`//`) differ from the regular division operator (`/`) in Python?",
+      "simplified_text": "How is `//` different from `/` in math?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "A. `//` returns the exact decimal result, while `/` returns only the whole number.",
+        "B. `//` only works with integers, while `/` works with all number types.",
+        "C. `//` returns the whole number part of the division, discarding any fractional part, while `/` returns the full decimal result.",
+        "D. `//` returns the remainder of the division, while `/` returns the quotient."
+      ],
+      "difficulty_level": 2,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "In Python, what is the significance of indentation (using 4 spaces or a tab) within `if`, `else`, or `while` statements?",
+      "simplified_text": "Why is spacing important in if/else/while code?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "A. It improves code readability but has no functional purpose.",
+        "B. It defines code blocks and indicates which statements belong to a specific condition or loop.",
+        "C. It speeds up the execution of the program.",
+        "D. It is used to add comments to the code."
+      ],
+      "difficulty_level": 2,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "When iterating over a string `s` using `for char in s:`, what value does the variable `char` hold in each iteration?",
+      "simplified_text": "What does `char` mean in `for char in s`?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "A. The numerical index of each character.",
+        "B. The length of the string `s`.",
+        "C. The character itself from the string.",
+        "D. A boolean value indicating if the character exists."
+      ],
+      "difficulty_level": 2,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "What would be the output of `type(3.14)` in Python?",
+      "simplified_text": "What type is `3.14`?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "A. <class 'int'>",
+        "B. <class 'str'>",
+        "C. <class 'float'>",
+        "D. <class 'bool'>"
+      ],
+      "difficulty_level": 3,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "Evaluate the following Python expression: `3 * (5 + 1)`.",
+      "simplified_text": "What is `3 * (5 + 1)`?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "A. 16",
+        "B. 18",
+        "C. 15",
+        "D. 6"
+      ],
+      "difficulty_level": 3,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "Consider the following code:\n```python\nx = 10\nif x % 2 == 0:\n    print(\"Even\")\nelse:\n    print(\"Odd\")\n```\nWhat will be the output?",
+      "simplified_text": "What does `x = 10`, `if x % 2 == 0` print?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "A. Odd",
+        "B. Even",
+        "C. Error",
+        "D. Nothing"
+      ],
+      "difficulty_level": 3,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "What will be the final value of `n` after the following loop finishes execution?\n```python\nn = 0\nwhile n < 3:\n    n = n + 1\n```",
+      "simplified_text": "What is `n` after `n=0`, `while n < 3: n=n+1`?",
+      "question_type": "multiple_choice",
+      "correct_answer": "D",
+      "options": [
+        "A. 0",
+        "B. 1",
+        "C. 2",
+        "D. 3"
+      ],
+      "difficulty_level": 3,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "If you try to assign a value to a variable named `if` (e.g., `if = 5`), what kind of error would Python most likely produce?",
+      "simplified_text": "What error if you name a variable `if`?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "A. NameError",
+        "B. TypeError",
+        "C. SyntaxError",
+        "D. ValueError"
+      ],
+      "difficulty_level": 4,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "Why does Python treat `a` and `A` as two completely different variables?",
+      "simplified_text": "Why are `a` and `A` different variables?",
+      "question_type": "multiple_choice",
+      "correct_answer": "A",
+      "options": [
+        "A. Because Python is a case-sensitive language.",
+        "B. Because they belong to different data types.",
+        "C. Because `A` represents a global variable, while `a` is local.",
+        "D. Because `a` is for numbers and `A` is for text."
+      ],
+      "difficulty_level": 4,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "In a series of `if-elif-else` statements, if an `if` condition is true and its block is executed, what happens to the subsequent `elif` and `else` blocks?",
+      "simplified_text": "If `if` is true, what happens to `elif` and `else`?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "A. All subsequent `elif` and `else` blocks are also checked and executed if their conditions are met.",
+        "B. Only the first `elif` block is checked, and if true, it is executed.",
+        "C. The program immediately exits the entire `if-elif-else` structure and continues with the code after it.",
+        "D. The `else` block is always executed regardless of the `if` or `elif` conditions."
+      ],
+      "difficulty_level": 4,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "What is the primary effect of using a `break` statement inside a `for` or `while` loop?",
+      "simplified_text": "What does `break` do in a loop?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "A. It skips the current iteration and moves to the next one.",
+        "B. It immediately terminates the loop and continues execution after the loop.",
+        "C. It restarts the loop from the beginning.",
+        "D. It pauses the loop indefinitely until a specific condition is met."
+      ],
+      "difficulty_level": 4,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "From a best practices perspective, why is it recommended to use descriptive names for variables (e.g., `velocity` instead of `x`)?",
+      "simplified_text": "Why use clear names for variables, not just `x`?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "A. Descriptive names make the program run faster.",
+        "B. Python requires all variable names to be descriptive for compilation.",
+        "C. Descriptive names improve code readability and understanding for others and for future self-reference.",
+        "D. Non-descriptive names can cause syntax errors."
+      ],
+      "difficulty_level": 5,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "When should you use `int(input(\"Enter a number: \"))` instead of just `input(\"Enter a number: \")`?",
+      "simplified_text": "When should you use `int(input())`?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "A. Always, as `input()` without `int()` will cause an error.",
+        "B. When you expect the user to enter text that needs to be treated as a string.",
+        "C. When the user's input is expected to be a whole number that will be used in arithmetic calculations.",
+        "D. Only when the input is a float number."
+      ],
+      "difficulty_level": 5,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "What is the primary advantage of organizing code into functions?",
+      "simplified_text": "Why put code into functions?",
+      "question_type": "multiple_choice",
+      "correct_answer": "B",
+      "options": [
+        "A. Functions automatically correct syntax errors.",
+        "B. Functions allow code to be reused multiple times without rewriting it, improving organization and maintainability.",
+        "C. Functions are only necessary for very simple programs.",
+        "D. Functions make the program's file size smaller."
+      ],
+      "difficulty_level": 5,
+      "isDeleted": false
+    },
+    {
+      "assessment_id": null,
+      "question_text": "In a scenario where you need to guess a number within a large sorted range (e.g., 0 to 100), why is the Bisection Search algorithm generally more efficient than a simple linear search (checking each number one by one)?",
+      "simplified_text": "Why is bisection search better than guessing one by one?",
+      "question_type": "multiple_choice",
+      "correct_answer": "C",
+      "options": [
+        "A. Bisection search uses fewer variables, saving memory.",
+        "B. Bisection search guarantees finding the number in the first attempt.",
+        "C. Bisection search eliminates half of the remaining search space with each guess, drastically reducing the number of trials.",
+        "D. Linear search cannot be used for numbers in a range."
+      ],
+      "difficulty_level": 5,
+      "isDeleted": false
+    }
+  ]
+}
